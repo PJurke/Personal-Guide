@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4CE126C2B49EFE800A7172B /* Personal_GuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* Personal_GuideApp.swift */; };
-		D4CE126E2B49EFE800A7172B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126D2B49EFE800A7172B /* ContentView.swift */; };
-		D4CE12702B49EFE800A7172B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126F2B49EFE800A7172B /* Item.swift */; };
+		D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */; };
 		D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12712B49EFE900A7172B /* Assets.xcassets */; };
 		D4CE12762B49EFE900A7172B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12752B49EFE900A7172B /* Preview Assets.xcassets */; };
 		D4CE12802B49EFEA00A7172B /* Personal_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE127F2B49EFEA00A7172B /* Personal_GuideTests.swift */; };
 		D4CE128A2B49EFEA00A7172B /* Personal_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12892B49EFEA00A7172B /* Personal_GuideUITests.swift */; };
 		D4CE128C2B49EFEA00A7172B /* Personal_GuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE128B2B49EFEA00A7172B /* Personal_GuideUITestsLaunchTests.swift */; };
+		D4CE129A2B49F14E00A7172B /* LifeGoalV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12992B49F14E00A7172B /* LifeGoalV1.swift */; };
+		D4CE12A12B49F74100A7172B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12A02B49F74100A7172B /* Launch Screen.storyboard */; };
+		D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A22B49F8E400A7172B /* PreviewContainer.swift */; };
+		D4CE12A52B49FD8200A7172B /* ProductionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A42B49FD8200A7172B /* ProductionContainer.swift */; };
+		D4CE12A72B49FE0100A7172B /* DataContainerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A62B49FE0100A7172B /* DataContainerErrorView.swift */; };
+		D4CE12AA2B49FF8B00A7172B /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A92B49FF8B00A7172B /* NoLifeGoalsView.swift */; };
+		D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */; };
+		D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */; };
+		D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */; };
+		D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */; };
+		D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */; };
+		D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +46,7 @@
 
 /* Begin PBXFileReference section */
 		D4CE12682B49EFE800A7172B /* Personal Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4CE126B2B49EFE800A7172B /* Personal_GuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_GuideApp.swift; sourceTree = "<group>"; };
-		D4CE126D2B49EFE800A7172B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4CE126F2B49EFE800A7172B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGuideApp.swift; sourceTree = "<group>"; };
 		D4CE12712B49EFE900A7172B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4CE12732B49EFE900A7172B /* Personal_Guide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Personal_Guide.entitlements; sourceTree = "<group>"; };
 		D4CE12752B49EFE900A7172B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +55,19 @@
 		D4CE12852B49EFEA00A7172B /* Personal GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Personal GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE12892B49EFEA00A7172B /* Personal_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_GuideUITests.swift; sourceTree = "<group>"; };
 		D4CE128B2B49EFEA00A7172B /* Personal_GuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_GuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4CE12992B49F14E00A7172B /* LifeGoalV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalV1.swift; sourceTree = "<group>"; };
+		D4CE129F2B49F6D700A7172B /* Personal-Guide-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Personal-Guide-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D4CE12A02B49F74100A7172B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D4CE12A22B49F8E400A7172B /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
+		D4CE12A42B49FD8200A7172B /* ProductionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionContainer.swift; sourceTree = "<group>"; };
+		D4CE12A62B49FE0100A7172B /* DataContainerErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainerErrorView.swift; sourceTree = "<group>"; };
+		D4CE12A92B49FF8B00A7172B /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
+		D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalRow.swift; sourceTree = "<group>"; };
+		D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailView.swift; sourceTree = "<group>"; };
+		D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalList.swift; sourceTree = "<group>"; };
+		D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalOverview.swift; sourceTree = "<group>"; };
+		D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailMode.swift; sourceTree = "<group>"; };
+		D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +118,12 @@
 		D4CE126A2B49EFE800A7172B /* Personal Guide */ = {
 			isa = PBXGroup;
 			children = (
-				D4CE126B2B49EFE800A7172B /* Personal_GuideApp.swift */,
-				D4CE126D2B49EFE800A7172B /* ContentView.swift */,
-				D4CE126F2B49EFE800A7172B /* Item.swift */,
+				D4CE129F2B49F6D700A7172B /* Personal-Guide-Info.plist */,
+				D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */,
+				D4CE12A02B49F74100A7172B /* Launch Screen.storyboard */,
+				D4CE12B52B4DD51B00A7172B /* Common */,
+				D4CE12982B49F0F100A7172B /* Data */,
+				D4CE129B2B49F47000A7172B /* Life Goals */,
 				D4CE12712B49EFE900A7172B /* Assets.xcassets */,
 				D4CE12732B49EFE900A7172B /* Personal_Guide.entitlements */,
 				D4CE12742B49EFE900A7172B /* Preview Content */,
@@ -130,6 +154,54 @@
 				D4CE128B2B49EFEA00A7172B /* Personal_GuideUITestsLaunchTests.swift */,
 			);
 			path = "Personal GuideUITests";
+			sourceTree = "<group>";
+		};
+		D4CE12982B49F0F100A7172B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE12A62B49FE0100A7172B /* DataContainerErrorView.swift */,
+				D4CE12A22B49F8E400A7172B /* PreviewContainer.swift */,
+				D4CE12A42B49FD8200A7172B /* ProductionContainer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D4CE129B2B49F47000A7172B /* Life Goals */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE129C2B49F47D00A7172B /* Models */,
+				D4CE12A82B49FF1C00A7172B /* Views */,
+			);
+			path = "Life Goals";
+			sourceTree = "<group>";
+		};
+		D4CE129C2B49F47D00A7172B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE12992B49F14E00A7172B /* LifeGoalV1.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4CE12A82B49FF1C00A7172B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */,
+				D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */,
+				D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */,
+				D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */,
+				D4CE12A92B49FF8B00A7172B /* NoLifeGoalsView.swift */,
+				D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4CE12B52B4DD51B00A7172B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CE12A12B49F74100A7172B /* Launch Screen.storyboard in Resources */,
 				D4CE12762B49EFE900A7172B /* Preview Assets.xcassets in Resources */,
 				D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */,
 			);
@@ -262,9 +335,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CE126E2B49EFE800A7172B /* ContentView.swift in Sources */,
-				D4CE12702B49EFE800A7172B /* Item.swift in Sources */,
-				D4CE126C2B49EFE800A7172B /* Personal_GuideApp.swift in Sources */,
+				D4CE129A2B49F14E00A7172B /* LifeGoalV1.swift in Sources */,
+				D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */,
+				D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */,
+				D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */,
+				D4CE12A52B49FD8200A7172B /* ProductionContainer.swift in Sources */,
+				D4CE12A72B49FE0100A7172B /* DataContainerErrorView.swift in Sources */,
+				D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */,
+				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
+				D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */,
+				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalsView.swift in Sources */,
+				D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */,
+				D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,16 +510,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Personal-Guide-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -446,10 +531,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.personal-leadership.Personal-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,16 +552,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Personal-Guide-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -484,10 +573,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.personal-leadership.Personal-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
