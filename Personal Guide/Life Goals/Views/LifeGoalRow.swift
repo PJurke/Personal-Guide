@@ -26,6 +26,7 @@ struct LifeGoalRow: View {
             }
             
         }
+        .contentShape(Rectangle())
         
     }
     
