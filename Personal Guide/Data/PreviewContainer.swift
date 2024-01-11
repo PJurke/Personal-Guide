@@ -17,11 +17,9 @@ let previewContainer: ModelContainer = {
         let container = try ModelContainer(for: schema, configurations: [config])
         
         // Inserts
-        container.mainContext.insert(LifeGoal("First Life Goal", isAchieved: true))
-        container.mainContext.insert(LifeGoal("Second Life Goal"))
-        container.mainContext.insert(LifeGoal("Third Life Goal", isAchieved: true))
-        container.mainContext.insert(LifeGoal("Fourth Life Goal"))
-        container.mainContext.insert(LifeGoal("Fifth Life Goal", isAchieved: true))
+        container.mainContext.insert(LifeGoal("Go Skydiving", isAchieved: true))
+        container.mainContext.insert(LifeGoal("Marry My Soulmate", isAchieved: false))
+        container.mainContext.insert(LifeGoal("Plant One Tree", isAchieved: false))
         
         return container
     } catch {
