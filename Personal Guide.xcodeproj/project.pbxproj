@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */; };
 		D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */; };
 		D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12712B49EFE900A7172B /* Assets.xcassets */; };
 		D4CE12762B49EFE900A7172B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12752B49EFE900A7172B /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		D4CE12682B49EFE800A7172B /* Personal Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGuideApp.swift; sourceTree = "<group>"; };
 		D4CE12712B49EFE900A7172B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7607E7F12B55C104004EBEDB /* Internationalization */ = {
+			isa = PBXGroup;
+			children = (
+				7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */,
+			);
+			path = Internationalization;
+			sourceTree = "<group>";
+		};
 		D4CE125F2B49EFE800A7172B = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 				D4CE12A02B49F74100A7172B /* Launch Screen.storyboard */,
 				D4CE12B52B4DD51B00A7172B /* Common */,
 				D4CE12982B49F0F100A7172B /* Data */,
+				7607E7F12B55C104004EBEDB /* Internationalization */,
 				D4CE129B2B49F47000A7172B /* Life Goals */,
 				D4CE12712B49EFE900A7172B /* Assets.xcassets */,
 				D4CE12732B49EFE900A7172B /* Personal_Guide.entitlements */,
@@ -290,6 +301,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = D4CE125F2B49EFE800A7172B;
 			productRefGroup = D4CE12692B49EFE800A7172B /* Products */;
@@ -310,6 +322,7 @@
 			files = (
 				D4CE12A12B49F74100A7172B /* Launch Screen.storyboard in Resources */,
 				D4CE12762B49EFE900A7172B /* Preview Assets.xcassets in Resources */,
+				7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */,
 				D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
