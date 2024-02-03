@@ -80,6 +80,13 @@ struct LifeGoalOverview: View {
                         systemImage: "plus"
                     )
                 }
+                ToolbarItem(placement: .topBarLeading) {
+                    NavigationLink {
+                        SettingsView()
+                    } label: {
+                        Label("Settings", systemImage: "gear")
+                    }
+                }
             }
             .sheet(isPresented: $addSheetVisible) {
                 LifeGoalDetailView(
