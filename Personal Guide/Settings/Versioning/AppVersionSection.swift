@@ -1,5 +1,5 @@
 //
-//  AppVersioningSection.swift
+//  AppVersionSection.swift
 //  Personal Guide
 //
 //  Created by Philip Jurke on 03.02.24.
