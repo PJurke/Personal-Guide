@@ -14,6 +14,7 @@ struct SettingsView: View {
         Form {
             
             AppVersionSection()
+            DocumentationLink()
             
         }
         .navigationBarTitleDisplayMode(.inline)
