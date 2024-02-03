@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppVersioningSection: View {
+struct AppVersionSection: View {
     
     // View
     
@@ -23,5 +23,5 @@ struct AppVersioningSection: View {
 }
 
 #Preview {
-    AppVersioningSection()
+    AppVersionSection()
 }
