@@ -16,6 +16,8 @@ struct SettingsView: View {
             AppVersionSection()
             
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Settings")
         
     }
     
