@@ -13,6 +13,9 @@
 		768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F38012B6EDB70005F267C /* AppVersionSection.swift */; };
 		768F38042B6EDBC2005F267C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F38032B6EDBC2005F267C /* SettingsView.swift */; };
 		768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F38082B6EE1A7005F267C /* DocumentationLink.swift */; };
+		768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380B2B6EE746005F267C /* AppColorScheme.swift */; };
+		768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380D2B6EE78E005F267C /* AppColorSchemeModifier.swift */; };
+		768F38102B6EEA1E005F267C /* AppColorSchemeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */; };
 		D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */; };
 		D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12712B49EFE900A7172B /* Assets.xcassets */; };
 		D4CE12762B49EFE900A7172B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12752B49EFE900A7172B /* Preview Assets.xcassets */; };
@@ -57,6 +60,9 @@
 		768F38012B6EDB70005F267C /* AppVersionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionSection.swift; sourceTree = "<group>"; };
 		768F38032B6EDBC2005F267C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		768F38082B6EE1A7005F267C /* DocumentationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationLink.swift; sourceTree = "<group>"; };
+		768F380B2B6EE746005F267C /* AppColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
+		768F380D2B6EE78E005F267C /* AppColorSchemeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSchemeModifier.swift; sourceTree = "<group>"; };
+		768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSchemeSection.swift; sourceTree = "<group>"; };
 		D4CE12682B49EFE800A7172B /* Personal Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGuideApp.swift; sourceTree = "<group>"; };
 		D4CE12712B49EFE900A7172B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				768F38032B6EDBC2005F267C /* SettingsView.swift */,
+				768F380A2B6EE728005F267C /* ColorScheme */,
 				768F38062B6EE18B005F267C /* Documentation */,
 				768F38052B6EDCAE005F267C /* Versioning */,
 			);
@@ -141,6 +148,16 @@
 				768F38082B6EE1A7005F267C /* DocumentationLink.swift */,
 			);
 			path = Documentation;
+			sourceTree = "<group>";
+		};
+		768F380A2B6EE728005F267C /* ColorScheme */ = {
+			isa = PBXGroup;
+			children = (
+				768F380B2B6EE746005F267C /* AppColorScheme.swift */,
+				768F380D2B6EE78E005F267C /* AppColorSchemeModifier.swift */,
+				768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */,
+			);
+			path = ColorScheme;
 			sourceTree = "<group>";
 		};
 		D4CE125F2B49EFE800A7172B = {
@@ -395,14 +412,17 @@
 				D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */,
 				D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */,
 				D4CE12A52B49FD8200A7172B /* ProductionContainer.swift in Sources */,
+				768F38102B6EEA1E005F267C /* AppColorSchemeSection.swift in Sources */,
 				D4CE12A72B49FE0100A7172B /* DataContainerErrorView.swift in Sources */,
 				768F38042B6EDBC2005F267C /* SettingsView.swift in Sources */,
+				768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */,
 				D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */,
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
 				D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */,
 				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalsView.swift in Sources */,
 				D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */,
+				768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */,
 				D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,6 +27,7 @@ struct Personal_GuideApp: App {
         
         WindowGroup {
             LifeGoalOverview()
+                .modifier(AppColorSchemeModifier())
                 .modelContainer(modelContainer)
         }
         

@@ -13,6 +13,7 @@ struct SettingsView: View {
         
         Form {
             
+            AppColorSchemeSection()
             AppVersionSection()
             DocumentationLink()
             
