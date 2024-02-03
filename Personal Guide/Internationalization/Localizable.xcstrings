@@ -145,6 +145,16 @@
         }
       }
     },
+    "Open Documentation" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne Dokumentation"
+          }
+        }
+      }
+    },
     "Settings" : {
       "localizations" : {
         "de" : {
