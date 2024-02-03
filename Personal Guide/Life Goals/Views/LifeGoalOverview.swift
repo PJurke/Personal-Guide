@@ -26,7 +26,7 @@ struct LifeGoalOverview: View {
         addSheetVisible = false
         
         if newGoal.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            newGoal.name = "New Life Goal"
+            newGoal.name = String(localized: "New Life Goal")
         }
         
         modelContext.insert(newGoal)
@@ -37,7 +37,7 @@ struct LifeGoalOverview: View {
         isGoalSelected = false
         
         if editedGoal.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            editedGoal.name = "Life Goal"
+            editedGoal.name = String(localized:"Life Goal")
         }
     }
     

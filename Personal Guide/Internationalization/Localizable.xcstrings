@@ -1,0 +1,167 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Achieved" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erledigt"
+          }
+        }
+      }
+    },
+    "Achievement" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erfolg"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hinzufügen"
+          }
+        }
+      }
+    },
+    "Add your first life goal" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Füge Dein erstes Lebensziel hinzu"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        }
+      }
+    },
+    "Data Unavailable" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten sind nicht verfügbar"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fertig"
+          }
+        }
+      }
+    },
+    "Edit Life Goal" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebensziel bearbeiten"
+          }
+        }
+      }
+    },
+    "Going Skydiving" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fallschirm springen"
+          }
+        }
+      }
+    },
+    "Life Goal" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebensziel"
+          }
+        }
+      }
+    },
+    "Life Goals" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebensziele"
+          }
+        }
+      }
+    },
+    "New Life Goal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neues Lebensziel"
+          }
+        }
+      }
+    },
+    "No Life Goals" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Lebensziele"
+          }
+        }
+      }
+    },
+    "There are no life goals stored currently." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktuell sind keine Lebensziele gespeichert"
+          }
+        }
+      }
+    },
+    "We are having trouble accessing the necessary data. Please give me some time to fix the error. Please keep your app updated." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wir haben Probleme beim Zugriff auf die erforderlichen Daten. Bitte geben Sie mir etwas Zeit, um den Fehler zu beheben. Bitte halten Sie Ihre App auf dem neuesten Stand."
+          }
+        }
+      }
+    },
+    "When choosing a name, opt for one or two easy-to-remember words. A combination of a verb and a noun usually works best." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bei der Benennung von Lebenszielen, wähle am besten ein oder zwei einfach zu erinnernde Wörter. Eine Kombination aus einem Verb und einem Substantiv funktioniert in der Regel am besten."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
