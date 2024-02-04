@@ -32,11 +32,7 @@ struct LifeGoalDetailView: View {
                         Text("When choosing a name, opt for one or two easy-to-remember words. A combination of a verb and a noun usually works best.")
                     }
                     
-                    Section {
-                        Toggle("Achieved", isOn: $lifeGoal.isAchieved)
-                    } header: {
-                        Text("Achievement")
-                    }
+                    Toggle("Achieved", isOn: $lifeGoal.isAchieved)
                     
                 }
                 

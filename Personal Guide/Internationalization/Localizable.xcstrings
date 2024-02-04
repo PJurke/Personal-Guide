@@ -14,16 +14,6 @@
         }
       }
     },
-    "Achievement" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erfolg"
-          }
-        }
-      }
-    },
     "Add" : {
       "localizations" : {
         "de" : {
