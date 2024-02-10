@@ -15,6 +15,16 @@ struct LifeGoalList: View {
     var lifeGoals: [LifeGoal]
     @Binding var selectedGoal: LifeGoal
     @Binding var isGoalSelected: Bool
+    @State private var searchText: String = ""
+    
+    var filteredLifeGoals: [LifeGoal] {
+        guard !searchText.isEmpty else { return lifeGoals }
+        
+        return lifeGoals.filter { goal in
+            goal.name.lowercased().contains(searchText.lowercased())
+            
+        }
+    }
     
     // Functions
     
@@ -32,7 +42,7 @@ struct LifeGoalList: View {
         
         List {
             
-            ForEach(lifeGoals) {
+            ForEach(filteredLifeGoals) {
                 goal in
                 LifeGoalRow(lifeGoal: goal)
                     .onTapGesture {
@@ -41,8 +51,8 @@ struct LifeGoalList: View {
                     }
             }
             .onDelete(perform: removeLifeGoal)
-            
         }
+        .searchable(text: $searchText, placement: .navigationBarDrawer, prompt: "Search")
         
     }
     
