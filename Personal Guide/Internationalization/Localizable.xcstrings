@@ -188,7 +188,14 @@
       }
     },
     "No Life Goals Found" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Lebensziele gefunden"
+          }
+        }
+      }
     },
     "Open Documentation" : {
       "localizations" : {
@@ -226,6 +233,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktuell sind keine Lebensziele gespeichert"
+          }
+        }
+      }
+    },
+    "There are no results for your search term." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es wurden keine Lebensziele unter dem Suchbegriff gefunden."
           }
         }
       }

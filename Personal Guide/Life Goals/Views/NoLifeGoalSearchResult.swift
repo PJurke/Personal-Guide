@@ -16,7 +16,7 @@ struct NoLifeGoalSearchResult: View {
         ContentUnavailableView(label: {
             Label("No Life Goals Found", systemImage: "binoculars.fill")
         }, description: {
-            Text("There are no life goals stored currently.")
+            Text("There are no results for your search term.")
         })
         
     }
