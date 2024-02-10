@@ -11,20 +11,10 @@ import SwiftUI
 struct LifeGoalList: View {
     
     @Environment(\.modelContext) private var modelContext
-    
+    @Environment(\.isSearching) private var isSearching: Bool
     var lifeGoals: [LifeGoal]
     @Binding var selectedGoal: LifeGoal
     @Binding var isGoalSelected: Bool
-    @State private var searchText: String = ""
-    
-    var filteredLifeGoals: [LifeGoal] {
-        guard !searchText.isEmpty else { return lifeGoals }
-        
-        return lifeGoals.filter { goal in
-            goal.name.lowercased().contains(searchText.lowercased())
-            
-        }
-    }
     
     // Functions
     
@@ -42,7 +32,7 @@ struct LifeGoalList: View {
         
         List {
             
-            ForEach(filteredLifeGoals) {
+            ForEach(lifeGoals) {
                 goal in
                 LifeGoalRow(lifeGoal: goal)
                     .onTapGesture {
@@ -52,7 +42,11 @@ struct LifeGoalList: View {
             }
             .onDelete(perform: removeLifeGoal)
         }
-        .searchable(text: $searchText, placement: .navigationBarDrawer, prompt: "Search")
+        .overlay {
+            if isSearching && lifeGoals.isEmpty {
+                NoLifeGoalSearchResult(action: {})
+            }
+        }
         
     }
     
