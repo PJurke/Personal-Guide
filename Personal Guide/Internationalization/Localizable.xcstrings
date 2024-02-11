@@ -56,14 +56,14 @@
       "localizations" : {
         "de" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lebensziele bearbeiten"
+            "state" : "needs_review",
+            "value" : "Lebensziel bearbeiten"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edit Life Goals"
+            "value" : "Edit Life Goal"
           }
         }
       }
