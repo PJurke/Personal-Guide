@@ -13,8 +13,8 @@ struct AppColorSchemeSection: View {
     
     var body: some View {
         
-        Section("Appearance") {
-            Picker("Color Scheme", selection: $appColorScheme) {
+        Section("Settings.ColorScheme.Section") {
+            Picker("Settings.ColorScheme.Label", selection: $appColorScheme) {
                 ForEach(AppColorScheme.allCases, id: \.self) { value in
                     Text(value.localizedName)
                 }

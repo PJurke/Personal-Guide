@@ -14,12 +14,12 @@ struct NoLifeGoalsView: View {
     var body: some View {
         
         ContentUnavailableView(label: {
-            Label("No Life Goals", systemImage: "flag.slash.fill")
+            Label("LifeGoals.None.Title", systemImage: "flag.slash.fill")
         }, description: {
-            Text("There are no life goals stored currently.")
+            Text("LifeGoals.None.Description")
         }, actions: {
             Button(action: action) {
-                Text("Add your first life goal")
+                Text("LifeGoals.None.Action")
             }
         })
         

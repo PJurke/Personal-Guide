@@ -13,7 +13,7 @@ struct AppVersionRow: View {
     
     var body: some View {
         
-        LabeledContent("Version") {
+        LabeledContent("Settings.Versioning.Version.Label") {
             Text("\(getAppVersion())")
         }
         
@@ -25,7 +25,7 @@ struct AppVersionRow: View {
         if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
             return version
         }
-        return "Unavailable"
+        return "Settings.Versioning.Version.Unavailable"
     }
     
 }

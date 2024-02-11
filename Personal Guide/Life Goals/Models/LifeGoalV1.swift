@@ -32,7 +32,7 @@ enum LifeGoalSchemaV1: VersionedSchema {
         
         // Initializer
         
-        init(_ name: String = String(localized: "New Life Goal"), id: UUID = UUID(), isAchieved: Bool = false) {
+        init(_ name: String = String(localized: "LifeGoals.Properties.Name.Default"), id: UUID = UUID(), isAchieved: Bool = false) {
             self.id = id
             self.isAchieved = isAchieved
             self.name = name

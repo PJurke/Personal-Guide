@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 enum AppColorScheme: String, CaseIterable, Codable {
-    case system = "System"
-    case dark = "Dark"
-    case light = "Light"
+    case system = "Settings.ColorScheme.System"
+    case dark = "Settings.ColorScheme.Dark"
+    case light = "Settings.ColorScheme.Light"
     
     var localizedName: LocalizedStringKey { LocalizedStringKey(rawValue) }
 }

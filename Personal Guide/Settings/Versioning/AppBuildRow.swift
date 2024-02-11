@@ -13,7 +13,7 @@ struct AppBuildRow: View {
     
     var body: some View {
         
-        LabeledContent("Build") {
+        LabeledContent("Settings.Versioning.Build.Label") {
             Text("\(getAppBuildNumber())")
         }
         
@@ -25,7 +25,7 @@ struct AppBuildRow: View {
         if let version = Bundle.main.infoDictionary!["CFBundleVersion"] as? String {
             return version
         }
-        return "Unavailable"
+        return "Settings.Versioning.Build.Unavailable"
     }
     
 }

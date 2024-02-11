@@ -26,13 +26,13 @@ struct LifeGoalDetailView: View {
                 Form {
                     
                     Section {
-                        TextField("Going Skydiving", text: $lifeGoal.name)
+                        TextField("LifeGoals.Example.Name", text: $lifeGoal.name)
                             .textInputAutocapitalization(.words)
                     } footer: {
-                        Text("When choosing a name, opt for one or two easy-to-remember words. A combination of a verb and a noun usually works best.")
+                        Text("LifeGoals.Properties.Name.Description")
                     }
                     
-                    Toggle("Achieved", isOn: $lifeGoal.isAchieved)
+                    Toggle("LifeGoals.Properties.IsAchieved", isOn: $lifeGoal.isAchieved)
                     
                 }
                 
@@ -45,7 +45,7 @@ struct LifeGoalDetailView: View {
                         Button(action: {
                             dismiss()
                         }) {
-                            Text("Cancel")
+                            Text("LifeGoals.Operations.Cancel")
                         }
                     }
                 }
@@ -53,7 +53,7 @@ struct LifeGoalDetailView: View {
                     Button(action: {
                         onComplete(lifeGoal)
                     }) {
-                        Text(mode == .add ? "Add" : "Done")
+                        Text(mode == .add ? "LifeGoals.Operations.Add" : "LifeGoals.Operations.Done")
                     }
                 }
         }
