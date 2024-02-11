@@ -18,7 +18,6 @@ struct SettingsView: View {
             DocumentationLink()
             
         }
-        .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Settings")
         
     }
