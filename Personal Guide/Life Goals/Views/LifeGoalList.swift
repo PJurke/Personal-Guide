@@ -11,7 +11,7 @@ import SwiftUI
 struct LifeGoalList: View {
     
     @Environment(\.modelContext) private var modelContext
-    
+    @Environment(\.isSearching) private var isSearching: Bool
     var lifeGoals: [LifeGoal]
     @Binding var selectedGoal: LifeGoal
     @Binding var isGoalSelected: Bool
@@ -41,7 +41,11 @@ struct LifeGoalList: View {
                     }
             }
             .onDelete(perform: removeLifeGoal)
-            
+        }
+        .overlay {
+            if isSearching && lifeGoals.isEmpty {
+                NoLifeGoalSearchResult(action: {})
+            }
         }
         
     }

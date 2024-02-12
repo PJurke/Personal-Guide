@@ -56,7 +56,7 @@ struct LifeGoalOverview: View {
                 if lifeGoals.isEmpty {
                     NoLifeGoalsView(action: showAddSheet)
                 } else {
-                    LifeGoalList(
+                    SearchableLifeGoalList(
                         lifeGoals: lifeGoals,
                         selectedGoal: $selectedGoal,
                         isGoalSelected: $isGoalSelected
