@@ -33,7 +33,7 @@ struct SearchableLifeGoalList: View {
             selectedGoal: $selectedGoal,
             isGoalSelected: $isGoalSelected
         )
-        .searchable(text: $searchText, prompt: "Search")
+        .searchable(text: $searchText, prompt: "LifeGoals.Search.Label")
         
     }
     

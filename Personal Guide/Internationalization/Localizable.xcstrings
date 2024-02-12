@@ -56,7 +56,7 @@
       "localizations" : {
         "de" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Lebensziel bearbeiten"
           }
         },
@@ -276,6 +276,54 @@
         }
       }
     },
+    "LifeGoals.Search.Label" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suche"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        }
+      }
+    },
+    "LifeGoals.Search.None.Description" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es wurden keine Lebsnziele unter dem Suchbegriff gefunden."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There are no results for your search term."
+          }
+        }
+      }
+    },
+    "LifeGoals.Search.None.Title" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Lebensziele gefunden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Life Goals Found"
+          }
+        }
+      }
+    },
     "LifeGoals.Title" : {
       "localizations" : {
         "de" : {
@@ -288,16 +336,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Life Goals"
-          }
-        }
-      }
-    },
-    "Search" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suchen"
           }
         }
       }
