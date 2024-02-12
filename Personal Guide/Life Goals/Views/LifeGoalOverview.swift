@@ -26,7 +26,7 @@ struct LifeGoalOverview: View {
         addSheetVisible = false
         
         if newGoal.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            newGoal.name = String(localized: "New Life Goal")
+            newGoal.name = String(localized: "LifeGoals.Properties.Name.NewDefault")
         }
         
         modelContext.insert(newGoal)
@@ -37,7 +37,7 @@ struct LifeGoalOverview: View {
         isGoalSelected = false
         
         if editedGoal.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            editedGoal.name = String(localized:"Life Goal")
+            editedGoal.name = String(localized:"LifeGoals.Properties.Name.EditDefault")
         }
     }
     
@@ -56,7 +56,7 @@ struct LifeGoalOverview: View {
                 if lifeGoals.isEmpty {
                     NoLifeGoalsView(action: showAddSheet)
                 } else {
-                    LifeGoalList(
+                    SearchableLifeGoalList(
                         lifeGoals: lifeGoals,
                         selectedGoal: $selectedGoal,
                         isGoalSelected: $isGoalSelected
@@ -71,8 +71,7 @@ struct LifeGoalOverview: View {
                     }
                 }
             }
-            .navigationTitle("Life Goals")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("LifeGoals.Title")
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     NavigationBarButton(
@@ -84,7 +83,7 @@ struct LifeGoalOverview: View {
                     NavigationLink {
                         SettingsView()
                     } label: {
-                        Label("Settings", systemImage: "gear")
+                        Label("Settings.Title", systemImage: "gear")
                     }
                 }
             }

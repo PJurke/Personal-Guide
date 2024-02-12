@@ -11,7 +11,7 @@ struct DocumentationLink: View {
     
     var body: some View {
         
-        Link("Open Documentation", destination: URL(string: "https://personal-guide.gitbook.io/documentation/")!)
+        Link("Documentation.Operations.Open", destination: URL(string: "https://personal-guide.gitbook.io/documentation/")!)
         
     }
     

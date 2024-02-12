@@ -14,9 +14,9 @@ enum LifeGoalDetailMode: String {
     var description: String {
         switch self {
         case .add:
-            return String(localized: "New Life Goal")
+            return String(localized: "LifeGoals.New")
         case .edit:
-            return String(localized: "Edit Life Goal")
+            return String(localized: "LifeGoals.Edit")
         }
     }
     

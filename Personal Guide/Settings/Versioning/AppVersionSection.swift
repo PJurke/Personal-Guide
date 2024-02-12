@@ -13,7 +13,7 @@ struct AppVersionSection: View {
     
     var body: some View {
         
-        Section("Versioning") {
+        Section("Settings.Versioning.Section") {
             AppVersionRow()
             AppBuildRow()
         }

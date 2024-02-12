@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */; };
+		765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */; };
+		765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */; };
 		768F37FD2B6ED923005F267C /* AppVersionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F37FC2B6ED923005F267C /* AppVersionRow.swift */; };
 		768F37FF2B6EDB11005F267C /* AppBuildRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F37FE2B6EDB11005F267C /* AppBuildRow.swift */; };
 		768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F38012B6EDB70005F267C /* AppVersionSection.swift */; };
@@ -27,7 +29,7 @@
 		D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A22B49F8E400A7172B /* PreviewContainer.swift */; };
 		D4CE12A52B49FD8200A7172B /* ProductionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A42B49FD8200A7172B /* ProductionContainer.swift */; };
 		D4CE12A72B49FE0100A7172B /* DataContainerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A62B49FE0100A7172B /* DataContainerErrorView.swift */; };
-		D4CE12AA2B49FF8B00A7172B /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A92B49FF8B00A7172B /* NoLifeGoalsView.swift */; };
+		D4CE12AA2B49FF8B00A7172B /* NoLifeGoalSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */; };
 		D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */; };
 		D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */; };
 		D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
+		765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableLifeGoalList.swift; sourceTree = "<group>"; };
 		768F37FC2B6ED923005F267C /* AppVersionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionRow.swift; sourceTree = "<group>"; };
 		768F37FE2B6EDB11005F267C /* AppBuildRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuildRow.swift; sourceTree = "<group>"; };
 		768F38012B6EDB70005F267C /* AppVersionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionSection.swift; sourceTree = "<group>"; };
@@ -79,7 +83,7 @@
 		D4CE12A22B49F8E400A7172B /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		D4CE12A42B49FD8200A7172B /* ProductionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionContainer.swift; sourceTree = "<group>"; };
 		D4CE12A62B49FE0100A7172B /* DataContainerErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainerErrorView.swift; sourceTree = "<group>"; };
-		D4CE12A92B49FF8B00A7172B /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
+		D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalSearchResult.swift; sourceTree = "<group>"; };
 		D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalRow.swift; sourceTree = "<group>"; };
 		D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailView.swift; sourceTree = "<group>"; };
 		D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalList.swift; sourceTree = "<group>"; };
@@ -253,12 +257,14 @@
 		D4CE12A82B49FF1C00A7172B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */,
-				D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */,
 				D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */,
+				765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */,
+				D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */,
 				D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */,
-				D4CE12A92B49FF8B00A7172B /* NoLifeGoalsView.swift */,
+				D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */,
+				765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */,
 				D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */,
+				D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 				D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */,
 				768F37FD2B6ED923005F267C /* AppVersionRow.swift in Sources */,
 				768F37FF2B6EDB11005F267C /* AppBuildRow.swift in Sources */,
+				765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */,
 				D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */,
 				D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */,
 				D4CE12A52B49FD8200A7172B /* ProductionContainer.swift in Sources */,
@@ -419,8 +426,9 @@
 				D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */,
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
+				765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */,
 				D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */,
-				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalsView.swift in Sources */,
+				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalSearchResult.swift in Sources */,
 				D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */,
 				768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */,
 				D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */,

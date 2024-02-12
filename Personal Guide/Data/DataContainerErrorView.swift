@@ -12,9 +12,9 @@ struct DataContainerErrorView: View {
     var body: some View {
         
         ContentUnavailableView(
-            "Data Unavailable",
+            "Data.None.Title",
             systemImage: "exclamationmark.triangle",
-            description: Text("We are having trouble accessing the necessary data. Please give me some time to fix the error. Please keep your app updated.")
+            description: Text("Data.None.Description")
         )
         
     }
