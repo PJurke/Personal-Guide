@@ -9,13 +9,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wir haben Probleme beim Zugriff auf die erforderlichen Daten. Bitte geben Sie mir etwas Zeit, um den Fehler zu beheben. Bitte halten Sie Ihre App auf dem neuesten Stand."
+            "value" : "Personal Guide hat Probleme beim Zugriff auf die erforderlichen Daten. Bitte gib mir etwas Zeit, um den Fehler zu beheben. Bitte halte die App auf dem neuesten Stand."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "We are having trouble accessing the necessary data. Please give me some time to fix the error. Please keep your app updated."
+            "value" : "Personal Guide has trouble accessing the necessary data. Please give me some time to fix the error. Please keep your app updated."
           }
         }
       }
@@ -297,7 +297,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Es wurden keine Lebsnziele unter dem Suchbegriff gefunden."
+            "value" : "Es wurden keine Lebensziele unter dem Suchbegriff gefunden."
           }
         },
         "en" : {
