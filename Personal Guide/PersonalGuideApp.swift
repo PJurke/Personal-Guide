@@ -11,14 +11,15 @@ import SwiftData
 @main
 struct Personal_GuideApp: App {
     
-    private var modelContainer: ModelContainer
+    private var modelContainer: ModelContainer?
     
     init() {
         
-        if let container = createProductionContainer() {
-            modelContainer = container
-        } else {
-            fatalError("Failed to initialize model container.")
+        do {
+            modelContainer = try createProductionContainer()
+        } catch {
+            print("Failed to initialize model container: \(error.localizedDescription)")
+            modelContainer = nil
         }
         
     }
@@ -26,9 +27,20 @@ struct Personal_GuideApp: App {
     var body: some Scene {
         
         WindowGroup {
-            LifeGoalOverview()
-                .modifier(AppColorSchemeModifier())
-                .modelContainer(modelContainer)
+            
+            if let container = modelContainer {
+                
+                LifeGoalOverview()
+                    .modifier(AppColorSchemeModifier())
+                    .modelContainer(container)
+                
+            } else {
+                
+                DataContainerErrorView()
+                
+            }
+            
+            
         }
         
     }
