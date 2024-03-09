@@ -31,5 +31,7 @@ struct AppBuildRow: View {
 }
 
 #Preview {
-    AppBuildRow()
+    Form {
+        AppBuildRow()
+    }
 }

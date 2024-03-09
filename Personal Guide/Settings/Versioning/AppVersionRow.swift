@@ -31,5 +31,7 @@ struct AppVersionRow: View {
 }
 
 #Preview {
-    AppVersionRow()
+    Form {
+        AppVersionRow()
+    }
 }

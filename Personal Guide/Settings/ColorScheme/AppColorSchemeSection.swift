@@ -26,5 +26,7 @@ struct AppColorSchemeSection: View {
 }
 
 #Preview {
-    AppColorSchemeSection()
+    Form {
+        AppColorSchemeSection()
+    }
 }
