@@ -4,6 +4,22 @@
     "%@" : {
 
     },
+    "App.Share" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teile Personal Guide"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share Personal Guide"
+          }
+        }
+      }
+    },
     "Data.None.Description" : {
       "localizations" : {
         "de" : {

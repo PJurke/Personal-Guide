@@ -13,8 +13,10 @@ struct AppVersionRow: View {
     
     var body: some View {
         
-        LabeledContent("Settings.Versioning.Version.Label") {
-            Text("\(getAppVersion())")
+        ShareLink(item: "Personal Guide App v\(getAppVersion())") {
+            LabeledContent("Settings.Versioning.Version.Label") {
+                Text("\(getAppVersion())")
+            }
         }
         
     }
