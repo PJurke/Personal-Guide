@@ -27,8 +27,13 @@ struct LifeGoalDetailView: View {
                     
                     Section {
                         TextField("LifeGoals.Example.Name", text: $lifeGoal.name)
+                            .textInputAutocapitalization(.words)
                     } footer: {
                         Text("LifeGoals.Properties.Name.Description")
+                    }
+                    
+                    Section {
+                        LifeAspectPicker(selection: $lifeGoal.aspect)
                     }
                     
                     Toggle("LifeGoals.Properties.IsAchieved", isOn: $lifeGoal.isAchieved)
