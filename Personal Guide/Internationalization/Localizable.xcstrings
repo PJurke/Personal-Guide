@@ -20,6 +20,38 @@
         }
       }
     },
+    "App.Share.Message" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teile den Link zu Personal Guide"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share the link to Personal Guide"
+          }
+        }
+      }
+    },
+    "App.Share.Subject" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teile Personal Guide"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share Personal Guide"
+          }
+        }
+      }
+    },
     "Data.None.Description" : {
       "localizations" : {
         "de" : {
