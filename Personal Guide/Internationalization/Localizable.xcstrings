@@ -53,7 +53,20 @@
       }
     },
     "Aspect" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aspekt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aspect"
+          }
+        }
+      }
     },
     "Data.None.Description" : {
       "localizations" : {
