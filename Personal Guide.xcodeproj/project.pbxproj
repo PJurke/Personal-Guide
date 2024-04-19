@@ -10,6 +10,10 @@
 		7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */; };
 		765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */; };
 		765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */; };
+		768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0C2BD3053300304665 /* LifeAspect.swift */; };
+		768DDE102BD3053300304665 /* LifeAspectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0D2BD3053300304665 /* LifeAspectPicker.swift */; };
+		768DDE122BD3057000304665 /* LifeGoalV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE112BD3057000304665 /* LifeGoalV2.swift */; };
+		768DDE142BD3057800304665 /* LifeGoalMigrationPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE132BD3057800304665 /* LifeGoalMigrationPlan.swift */; };
 		768F37FD2B6ED923005F267C /* AppVersionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F37FC2B6ED923005F267C /* AppVersionRow.swift */; };
 		768F37FF2B6EDB11005F267C /* AppBuildRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F37FE2B6EDB11005F267C /* AppBuildRow.swift */; };
 		768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F38012B6EDB70005F267C /* AppVersionSection.swift */; };
@@ -18,6 +22,7 @@
 		768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380B2B6EE746005F267C /* AppColorScheme.swift */; };
 		768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380D2B6EE78E005F267C /* AppColorSchemeModifier.swift */; };
 		768F38102B6EEA1E005F267C /* AppColorSchemeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */; };
+		76B1C1CB2B9CFF7D005939B0 /* ShareAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */; };
 		D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */; };
 		D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12712B49EFE900A7172B /* Assets.xcassets */; };
 		D4CE12762B49EFE900A7172B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12752B49EFE900A7172B /* Preview Assets.xcassets */; };
@@ -59,6 +64,10 @@
 		7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
 		765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableLifeGoalList.swift; sourceTree = "<group>"; };
+		768DDE0C2BD3053300304665 /* LifeAspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspect.swift; sourceTree = "<group>"; };
+		768DDE0D2BD3053300304665 /* LifeAspectPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspectPicker.swift; sourceTree = "<group>"; };
+		768DDE112BD3057000304665 /* LifeGoalV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeGoalV2.swift; sourceTree = "<group>"; };
+		768DDE132BD3057800304665 /* LifeGoalMigrationPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeGoalMigrationPlan.swift; sourceTree = "<group>"; };
 		768F37FC2B6ED923005F267C /* AppVersionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionRow.swift; sourceTree = "<group>"; };
 		768F37FE2B6EDB11005F267C /* AppBuildRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuildRow.swift; sourceTree = "<group>"; };
 		768F38012B6EDB70005F267C /* AppVersionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionSection.swift; sourceTree = "<group>"; };
@@ -67,6 +76,7 @@
 		768F380B2B6EE746005F267C /* AppColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
 		768F380D2B6EE78E005F267C /* AppColorSchemeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSchemeModifier.swift; sourceTree = "<group>"; };
 		768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSchemeSection.swift; sourceTree = "<group>"; };
+		76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAppRow.swift; sourceTree = "<group>"; };
 		D4CE12682B49EFE800A7172B /* Personal Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGuideApp.swift; sourceTree = "<group>"; };
 		D4CE12712B49EFE900A7172B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,12 +135,22 @@
 			path = Internationalization;
 			sourceTree = "<group>";
 		};
+		768DDE0E2BD3053300304665 /* Life Aspect */ = {
+			isa = PBXGroup;
+			children = (
+				768DDE0C2BD3053300304665 /* LifeAspect.swift */,
+				768DDE0D2BD3053300304665 /* LifeAspectPicker.swift */,
+			);
+			path = "Life Aspect";
+			sourceTree = "<group>";
+		};
 		768F37FB2B6ED907005F267C /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				768F38032B6EDBC2005F267C /* SettingsView.swift */,
 				768F380A2B6EE728005F267C /* ColorScheme */,
 				768F38062B6EE18B005F267C /* Documentation */,
+				76B1C1C92B9CFF5E005939B0 /* Sharing */,
 				768F38052B6EDCAE005F267C /* Versioning */,
 			);
 			path = Settings;
@@ -164,6 +184,14 @@
 			path = ColorScheme;
 			sourceTree = "<group>";
 		};
+		76B1C1C92B9CFF5E005939B0 /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
 		D4CE125F2B49EFE800A7172B = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +221,7 @@
 				D4CE12B52B4DD51B00A7172B /* Common */,
 				D4CE12982B49F0F100A7172B /* Data */,
 				7607E7F12B55C104004EBEDB /* Internationalization */,
+				768DDE0E2BD3053300304665 /* Life Aspect */,
 				D4CE129B2B49F47000A7172B /* Life Goals */,
 				768F37FB2B6ED907005F267C /* Settings */,
 				D4CE12712B49EFE900A7172B /* Assets.xcassets */,
@@ -249,7 +278,9 @@
 		D4CE129C2B49F47D00A7172B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				768DDE132BD3057800304665 /* LifeGoalMigrationPlan.swift */,
 				D4CE12992B49F14E00A7172B /* LifeGoalV1.swift */,
+				768DDE112BD3057000304665 /* LifeGoalV2.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -341,7 +372,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					D4CE12672B49EFE800A7172B = {
 						CreatedOnToolsVersion = 15.1;
@@ -412,22 +443,27 @@
 			files = (
 				D4CE129A2B49F14E00A7172B /* LifeGoalV1.swift in Sources */,
 				768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */,
+				768DDE142BD3057800304665 /* LifeGoalMigrationPlan.swift in Sources */,
 				D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */,
 				768F37FD2B6ED923005F267C /* AppVersionRow.swift in Sources */,
 				768F37FF2B6EDB11005F267C /* AppBuildRow.swift in Sources */,
 				765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */,
 				D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */,
+				76B1C1CB2B9CFF7D005939B0 /* ShareAppRow.swift in Sources */,
+				768DDE122BD3057000304665 /* LifeGoalV2.swift in Sources */,
 				D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */,
 				D4CE12A52B49FD8200A7172B /* ProductionContainer.swift in Sources */,
 				768F38102B6EEA1E005F267C /* AppColorSchemeSection.swift in Sources */,
 				D4CE12A72B49FE0100A7172B /* DataContainerErrorView.swift in Sources */,
 				768F38042B6EDBC2005F267C /* SettingsView.swift in Sources */,
+				768DDE102BD3053300304665 /* LifeAspectPicker.swift in Sources */,
 				768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */,
 				D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */,
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
 				765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */,
 				D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */,
+				768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */,
 				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalSearchResult.swift in Sources */,
 				D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */,
 				768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */,
@@ -473,6 +509,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -535,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

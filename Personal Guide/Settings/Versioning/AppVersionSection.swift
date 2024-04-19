@@ -23,5 +23,7 @@ struct AppVersionSection: View {
 }
 
 #Preview {
-    AppVersionSection()
+    Form {
+        AppVersionSection()
+    }
 }

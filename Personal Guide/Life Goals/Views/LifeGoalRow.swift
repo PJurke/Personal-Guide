@@ -33,8 +33,10 @@ struct LifeGoalRow: View {
 }
 
 #Preview {
-    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
-    
-    return LifeGoalRow(lifeGoal: goal)
-        .modelContainer(previewContainer)
+    Form {
+        let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+        
+        return LifeGoalRow(lifeGoal: goal)
+            .modelContainer(previewContainer)
+    }
 }

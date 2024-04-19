@@ -16,6 +16,7 @@ struct SettingsView: View {
             AppColorSchemeSection()
             AppVersionSection()
             DocumentationLink()
+            ShareAppRow()
             
         }
         .navigationTitle("Settings")

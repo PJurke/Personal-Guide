@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-enum LifeGoalSchemaV1: VersionedSchema {
+enum LifeGoalSchemaV2: VersionedSchema {
     
     /*
          Schema Versioning:
@@ -16,7 +16,7 @@ enum LifeGoalSchemaV1: VersionedSchema {
          - Second digit: Minor changes, backward-compatible features
          - Third digit: Patches, bug fixes
      */
-    static var versionIdentifier = Schema.Version(1, 0, 0)
+    static var versionIdentifier = Schema.Version(2, 0, 0)
     
     static var models: [any PersistentModel.Type] {
         [LifeGoal.self]
@@ -26,14 +26,16 @@ enum LifeGoalSchemaV1: VersionedSchema {
         
         // Properties
         
+        var aspect: LifeAspect
         var isAchieved: Bool
         var name: String
         @Attribute(.unique) var id: UUID
         
         // Initializer
         
-        init(_ name: String = String(localized: "LifeGoals.Properties.Name.Default"), id: UUID = UUID(), isAchieved: Bool = false) {
-            self.id = id
+        init(_ name: String = String(localized: "LifeGoals.Properties.Name.Default"), aspect: LifeAspect = .unknown, isAchieved: Bool = false) {
+            self.aspect = aspect
+            self.id = UUID()
             self.isAchieved = isAchieved
             self.name = name
         }
@@ -41,3 +43,5 @@ enum LifeGoalSchemaV1: VersionedSchema {
     }
     
 }
+
+typealias LifeGoal = LifeGoalSchemaV2.LifeGoal

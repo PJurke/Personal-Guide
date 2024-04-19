@@ -32,6 +32,10 @@ struct LifeGoalDetailView: View {
                         Text("LifeGoals.Properties.Name.Description")
                     }
                     
+                    Section {
+                        LifeAspectPicker(selection: $lifeGoal.aspect)
+                    }
+                    
                     Toggle("LifeGoals.Properties.IsAchieved", isOn: $lifeGoal.isAchieved)
                     
                 }

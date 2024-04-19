@@ -18,5 +18,7 @@ struct DocumentationLink: View {
 }
 
 #Preview {
-    DocumentationLink()
+    Form {
+        DocumentationLink()
+    }
 }
