@@ -33,6 +33,7 @@ struct Personal_GuideApp: App {
                 LifeGoalOverview()
                     .modifier(AppColorSchemeModifier())
                     .modelContainer(container)
+                    .environment(\.locale, .init(identifier: "en"))
                 
             } else {
                 
