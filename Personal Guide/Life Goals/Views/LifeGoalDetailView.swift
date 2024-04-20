@@ -27,7 +27,6 @@ struct LifeGoalDetailView: View {
                     
                     Section {
                         TextField("LifeGoals.Example.Name", text: $lifeGoal.name)
-                            .textInputAutocapitalization(.words)
                     } footer: {
                         Text("LifeGoals.Properties.Name.Description")
                     }
