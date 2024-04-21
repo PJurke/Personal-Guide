@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */; };
+		7620FD9D2BD56FC500F4816C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9C2BD56FC500F4816C /* MainView.swift */; };
 		765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */; };
 		765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */; };
 		768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0C2BD3053300304665 /* LifeAspect.swift */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		7620FD9C2BD56FC500F4816C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
 		765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableLifeGoalList.swift; sourceTree = "<group>"; };
 		768DDE0C2BD3053300304665 /* LifeAspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspect.swift; sourceTree = "<group>"; };
@@ -216,8 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				D4CE129F2B49F6D700A7172B /* Personal-Guide-Info.plist */,
-				D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */,
 				D4CE12A02B49F74100A7172B /* Launch Screen.storyboard */,
+				D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */,
+				7620FD9C2BD56FC500F4816C /* MainView.swift */,
 				D4CE12B52B4DD51B00A7172B /* Common */,
 				D4CE12982B49F0F100A7172B /* Data */,
 				7607E7F12B55C104004EBEDB /* Internationalization */,
@@ -442,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CE129A2B49F14E00A7172B /* LifeGoalV1.swift in Sources */,
+				7620FD9D2BD56FC500F4816C /* MainView.swift in Sources */,
 				768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */,
 				768DDE142BD3057800304665 /* LifeGoalMigrationPlan.swift in Sources */,
 				D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */,

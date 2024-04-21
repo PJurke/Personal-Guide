@@ -30,7 +30,7 @@ struct Personal_GuideApp: App {
             
             if let container = modelContainer {
                 
-                LifeGoalOverview()
+                MainView()
                     .modifier(AppColorSchemeModifier())
                     .modelContainer(container)
                     .environment(\.locale, .init(identifier: "en"))
