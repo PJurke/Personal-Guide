@@ -19,7 +19,6 @@ struct SettingsView: View {
             ShareAppRow()
             
         }
-        .navigationTitle("Settings")
         
     }
     

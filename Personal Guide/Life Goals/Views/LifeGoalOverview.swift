@@ -71,20 +71,12 @@ struct LifeGoalOverview: View {
                     }
                 }
             }
-            .navigationTitle("LifeGoals.Title")
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     NavigationBarButton(
                         action: showAddSheet,
                         systemImage: "plus"
                     )
-                }
-                ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink {
-                        SettingsView()
-                    } label: {
-                        Label("Settings.Title", systemImage: "gear")
-                    }
                 }
             }
             .sheet(isPresented: $addSheetVisible) {

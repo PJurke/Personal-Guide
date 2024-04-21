@@ -15,12 +15,12 @@ struct MainView: View {
             
             LifeGoalOverview()
                 .tabItem {
-                    Text("LifeGoals.Label")
+                    Label("LifeGoals.Label", systemImage: "flag")
                 }
             
             SettingsView()
                 .tabItem {
-                    Text("Settings.Label")
+                    Label("Settings.Label", systemImage: "gear")
                 }
             
         }
