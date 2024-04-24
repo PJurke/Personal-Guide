@@ -15,6 +15,7 @@ struct SettingsView: View {
             
             AppColorSchemeSection()
             AppVersionSection()
+            DataSection()
             DocumentationLink()
             ShareAppRow()
             

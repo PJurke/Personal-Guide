@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */; };
 		7620FD9D2BD56FC500F4816C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9C2BD56FC500F4816C /* MainView.swift */; };
+		7620FDA02BD80C1200F4816C /* ExportDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */; };
+		7620FDA22BD813B100F4816C /* DataSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FDA12BD813B100F4816C /* DataSection.swift */; };
 		765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */; };
 		765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */; };
 		768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0C2BD3053300304665 /* LifeAspect.swift */; };
@@ -23,6 +25,7 @@
 		768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380B2B6EE746005F267C /* AppColorScheme.swift */; };
 		768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380D2B6EE78E005F267C /* AppColorSchemeModifier.swift */; };
 		768F38102B6EEA1E005F267C /* AppColorSchemeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */; };
+		76AD79B62BD97489001446DC /* CSVDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AD79B52BD97489001446DC /* CSVDocument.swift */; };
 		76B1C1CB2B9CFF7D005939B0 /* ShareAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */; };
 		D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */; };
 		D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12712B49EFE900A7172B /* Assets.xcassets */; };
@@ -64,6 +67,8 @@
 /* Begin PBXFileReference section */
 		7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7620FD9C2BD56FC500F4816C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDataRow.swift; sourceTree = "<group>"; };
+		7620FDA12BD813B100F4816C /* DataSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSection.swift; sourceTree = "<group>"; };
 		765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
 		765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableLifeGoalList.swift; sourceTree = "<group>"; };
 		768DDE0C2BD3053300304665 /* LifeAspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspect.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		768F380B2B6EE746005F267C /* AppColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
 		768F380D2B6EE78E005F267C /* AppColorSchemeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSchemeModifier.swift; sourceTree = "<group>"; };
 		768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSchemeSection.swift; sourceTree = "<group>"; };
+		76AD79B52BD97489001446DC /* CSVDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDocument.swift; sourceTree = "<group>"; };
 		76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAppRow.swift; sourceTree = "<group>"; };
 		D4CE12682B49EFE800A7172B /* Personal Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGuideApp.swift; sourceTree = "<group>"; };
@@ -137,6 +143,15 @@
 			path = Internationalization;
 			sourceTree = "<group>";
 		};
+		7620FD9E2BD80BE400F4816C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */,
+				7620FDA12BD813B100F4816C /* DataSection.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		768DDE0E2BD3053300304665 /* Life Aspect */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +167,7 @@
 				768F38032B6EDBC2005F267C /* SettingsView.swift */,
 				768F380A2B6EE728005F267C /* ColorScheme */,
 				768F38062B6EE18B005F267C /* Documentation */,
+				7620FD9E2BD80BE400F4816C /* Data */,
 				76B1C1C92B9CFF5E005939B0 /* Sharing */,
 				768F38052B6EDCAE005F267C /* Versioning */,
 			);
@@ -307,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */,
+				76AD79B52BD97489001446DC /* CSVDocument.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -449,6 +466,7 @@
 				768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */,
 				768DDE142BD3057800304665 /* LifeGoalMigrationPlan.swift in Sources */,
 				D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */,
+				7620FDA02BD80C1200F4816C /* ExportDataRow.swift in Sources */,
 				768F37FD2B6ED923005F267C /* AppVersionRow.swift in Sources */,
 				768F37FF2B6EDB11005F267C /* AppBuildRow.swift in Sources */,
 				765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */,
@@ -462,7 +480,9 @@
 				768F38042B6EDBC2005F267C /* SettingsView.swift in Sources */,
 				768DDE102BD3053300304665 /* LifeAspectPicker.swift in Sources */,
 				768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */,
+				7620FDA22BD813B100F4816C /* DataSection.swift in Sources */,
 				D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */,
+				76AD79B62BD97489001446DC /* CSVDocument.swift in Sources */,
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
 				765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */,
