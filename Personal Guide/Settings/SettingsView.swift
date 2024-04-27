@@ -11,14 +11,17 @@ struct SettingsView: View {
     
     var body: some View {
         
-        Form {
-            
-            AppColorSchemeSection()
-            AppVersionSection()
-            DataSection()
-            DocumentationLink()
-            ShareAppRow()
-            
+        NavigationStack {
+            Form {
+                
+                AppColorSchemeSection()
+                AppVersionSection()
+                DataSection()
+                DocumentationLink()
+                ShareAppRow()
+                
+            }
+            .navigationTitle("Settings")
         }
         
     }
