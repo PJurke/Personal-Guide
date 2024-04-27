@@ -30,8 +30,16 @@ struct AppBuildRow: View {
     
 }
 
-#Preview {
+#Preview("AppBuildRow (EN)") {
     Form {
         AppBuildRow()
     }
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("AppBuildRow (DE)") {
+    Form {
+        AppBuildRow()
+    }
+    .environment(\.locale, .init(identifier: "de"))
 }

@@ -23,6 +23,12 @@ struct NoLifeGoalSearchResult: View {
     
 }
 
-#Preview {
+#Preview("NoLifeGoalSearchResult (EN)") {
     NoLifeGoalSearchResult(action: {})
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("NoLifeGoalSearchResult (DE)") {
+    NoLifeGoalSearchResult(action: {})
+        .environment(\.locale, .init(identifier: "de"))
 }

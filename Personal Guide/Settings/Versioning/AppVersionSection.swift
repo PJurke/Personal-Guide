@@ -22,8 +22,16 @@ struct AppVersionSection: View {
     
 }
 
-#Preview {
+#Preview("AppVersionSection (EN)") {
     Form {
         AppVersionSection()
     }
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("AppVersionSection (DE)") {
+    Form {
+        AppVersionSection()
+    }
+    .environment(\.locale, .init(identifier: "de"))
 }

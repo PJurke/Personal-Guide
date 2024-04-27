@@ -25,6 +25,12 @@ struct LifeAspectPicker: View {
     
 }
 
-#Preview {
+#Preview("LifeAspectPicker (EN)") {
     LifeAspectPicker(selection: .constant(.unknown))
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("LifeAspectPicker (DE)") {
+    LifeAspectPicker(selection: .constant(.unknown))
+        .environment(\.locale, .init(identifier: "de"))
 }

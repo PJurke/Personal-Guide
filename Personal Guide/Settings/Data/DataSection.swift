@@ -18,6 +18,16 @@ struct DataSection: View {
     }
 }
 
-#Preview {
-    DataSection()
+#Preview("DataSection (EN)") {
+    Form {
+        DataSection()
+    }
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("DataSection (DE)") {
+    Form {
+        DataSection()
+    }
+    .environment(\.locale, .init(identifier: "de"))
 }

@@ -66,6 +66,16 @@ struct ExportDataRow: View {
     
 }
 
-#Preview {
-    ExportDataRow()
+#Preview("ExportDataRow (EN)") {
+    Form {
+        ExportDataRow()
+    }
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("ExportDataRow (DE)") {
+    Form {
+        ExportDataRow()
+    }
+    .environment(\.locale, .init(identifier: "de"))
 }

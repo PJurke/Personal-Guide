@@ -17,8 +17,16 @@ struct DocumentationLink: View {
     
 }
 
-#Preview {
+#Preview("DocumentationLink (EN)") {
     Form {
         DocumentationLink()
     }
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("DocumentationLink (DE)") {
+    Form {
+        DocumentationLink()
+    }
+    .environment(\.locale, .init(identifier: "de"))
 }
