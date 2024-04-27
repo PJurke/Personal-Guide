@@ -40,7 +40,7 @@ struct LifeGoalDetailView: View {
                 }
                 
             }
-            .navigationTitle(mode.description)
+            .navigationTitle(mode.localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 if mode == .add {
@@ -66,7 +66,29 @@ struct LifeGoalDetailView: View {
     
 }
 
-#Preview {
+#Preview("LifeGoalDetailView (add, EN)") {
+    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+    
+    return LifeGoalDetailView(
+        lifeGoal: .constant(goal),
+        mode: .add,
+        onComplete: { _ in }
+    )
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("LifeGoalDetailView (add, DE)") {
+    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+    
+    return LifeGoalDetailView(
+        lifeGoal: .constant(goal),
+        mode: .add,
+        onComplete: { _ in }
+    )
+    .environment(\.locale, .init(identifier: "de"))
+}
+
+#Preview("LifeGoalDetailView (edit, EN)") {
     let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
     
     return LifeGoalDetailView(
@@ -74,4 +96,16 @@ struct LifeGoalDetailView: View {
         mode: .edit,
         onComplete: { _ in }
     )
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("LifeGoalDetailView (edit, DE)") {
+    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+    
+    return LifeGoalDetailView(
+        lifeGoal: .constant(goal),
+        mode: .edit,
+        onComplete: { _ in }
+    )
+    .environment(\.locale, .init(identifier: "de"))
 }

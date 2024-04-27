@@ -11,20 +11,29 @@ struct SettingsView: View {
     
     var body: some View {
         
-        Form {
-            
-            AppColorSchemeSection()
-            AppVersionSection()
-            DataSection()
-            DocumentationLink()
-            ShareAppRow()
-            
+        NavigationStack {
+            Form {
+                
+                AppColorSchemeSection()
+                AppVersionSection()
+                DataSection()
+                DocumentationLink()
+                ShareAppRow()
+                
+            }
+            .navigationTitle("Settings.Label")
         }
         
     }
     
 }
 
-#Preview {
+#Preview("SettingsView (EN)") {
     SettingsView()
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("SettingsView (DE)") {
+    SettingsView()
+        .environment(\.locale, .init(identifier: "de"))
 }

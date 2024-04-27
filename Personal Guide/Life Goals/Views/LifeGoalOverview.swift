@@ -71,6 +71,7 @@ struct LifeGoalOverview: View {
                     }
                 }
             }
+            .navigationTitle("LifeGoals.Label")
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     NavigationBarButton(
@@ -93,7 +94,14 @@ struct LifeGoalOverview: View {
     
 }
 
-#Preview {
+#Preview("LifeGoalOverview (EN)") {
     LifeGoalOverview()
         .modelContainer(previewContainer)
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("LifeGoalOverview (DE)") {
+    LifeGoalOverview()
+        .modelContainer(previewContainer)
+        .environment(\.locale, .init(identifier: "de"))
 }

@@ -22,8 +22,16 @@ struct ShareAppRow: View {
     
 }
 
-#Preview {
+#Preview("ShareAppRow (EN)") {
     Form {
         ShareAppRow()
     }
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("ShareAppRow (DE)") {
+    Form {
+        ShareAppRow()
+    }
+    .environment(\.locale, .init(identifier: "de"))
 }

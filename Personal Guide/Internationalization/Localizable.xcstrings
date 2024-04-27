@@ -139,6 +139,12 @@
             "state" : "translated",
             "value" : "Daten"
           }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
+          }
         }
       }
     },
@@ -463,7 +469,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Achievement"
+            "value" : "Achieved"
           }
         }
       }

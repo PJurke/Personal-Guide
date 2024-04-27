@@ -25,8 +25,16 @@ struct AppColorSchemeSection: View {
     
 }
 
-#Preview {
+#Preview("AppColorSchemeSection (EN)") {
     Form {
         AppColorSchemeSection()
     }
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("AppColorSchemeSection (DE)") {
+    Form {
+        AppColorSchemeSection()
+    }
+    .environment(\.locale, .init(identifier: "de"))
 }

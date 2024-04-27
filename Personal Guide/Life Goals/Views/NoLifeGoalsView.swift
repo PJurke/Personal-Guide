@@ -27,6 +27,12 @@ struct NoLifeGoalsView: View {
     
 }
 
-#Preview {
+#Preview("NoLifeGoalsView (EN)") {
     NoLifeGoalsView(action: {})
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("NoLifeGoalsView (DE)") {
+    NoLifeGoalsView(action: {})
+        .environment(\.locale, .init(identifier: "de"))
 }

@@ -39,11 +39,22 @@ struct SearchableLifeGoalList: View {
     
 }
 
-#Preview {
+#Preview("SearchableLifeGoalList (EN)") {
     let goals = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>())
     @State var firstGoal = goals.first!
     @State var isGoalSelected = false
     
     return SearchableLifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)
         .modelContainer(previewContainer)
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("SearchableLifeGoalList (DE)") {
+    let goals = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>())
+    @State var firstGoal = goals.first!
+    @State var isGoalSelected = false
+    
+    return SearchableLifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)
+        .modelContainer(previewContainer)
+        .environment(\.locale, .init(identifier: "de"))
 }

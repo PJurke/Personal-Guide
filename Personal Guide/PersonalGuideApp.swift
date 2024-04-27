@@ -33,7 +33,6 @@ struct Personal_GuideApp: App {
                 MainView()
                     .modifier(AppColorSchemeModifier())
                     .modelContainer(container)
-                    .environment(\.locale, .init(identifier: "en"))
                 
             } else {
                 

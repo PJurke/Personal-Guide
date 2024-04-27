@@ -32,11 +32,22 @@ struct LifeGoalRow: View {
     
 }
 
-#Preview {
+#Preview("LifeGoalRow (EN)") {
     Form {
         let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
         
         return LifeGoalRow(lifeGoal: goal)
             .modelContainer(previewContainer)
+            .environment(\.locale, .init(identifier: "en"))
+    }
+}
+
+#Preview("LifeGoalRow (DE)") {
+    Form {
+        let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+        
+        return LifeGoalRow(lifeGoal: goal)
+            .modelContainer(previewContainer)
+            .environment(\.locale, .init(identifier: "de"))
     }
 }
