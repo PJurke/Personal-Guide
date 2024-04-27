@@ -71,6 +71,7 @@ struct LifeGoalOverview: View {
                     }
                 }
             }
+            .navigationTitle("Life Goals")
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     NavigationBarButton(
