@@ -452,22 +452,6 @@
         }
       }
     },
-    "LifeGoals.Overview.Title" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lebensziele"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Life Goals"
-          }
-        }
-      }
-    },
     "LifeGoals.Properties.IsAchieved" : {
       "localizations" : {
         "de" : {
@@ -685,22 +669,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Einstellungen"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Settings"
-          }
-        }
-      }
-    },
-    "Settings.Overview.Title" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Settings"
           }
         },
         "en" : {
