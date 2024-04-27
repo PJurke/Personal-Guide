@@ -40,7 +40,7 @@ struct LifeGoalDetailView: View {
                 }
                 
             }
-            .navigationTitle(LocalizedStringKey(mode.localized))
+            .navigationTitle(mode.localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 if mode == .add {

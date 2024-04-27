@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum LifeGoalDetailMode: String {
     
     case add, edit
     
-    var localized: String {
+    var localized: LocalizedStringKey {
         switch self {
         case .add:
             return "LifeGoals.New"
