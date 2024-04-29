@@ -132,6 +132,22 @@
         }
       }
     },
+    "Cancel" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
     "Data" : {
       "localizations" : {
         "de" : {
@@ -176,6 +192,54 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data Unavailable"
+          }
+        }
+      }
+    },
+    "Data.Operations.RemoveAll.Confirmation.Button" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja, lösche alle Daten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes, delete all data"
+          }
+        }
+      }
+    },
+    "Data.Operations.RemoveAll.Confirmation.Headline" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Möchtest du wirklich alle Daten löschen?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do you really want to remove all data?"
+          }
+        }
+      }
+    },
+    "Data.Operations.RemoveAll.Label" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Daten löschen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove all data"
           }
         }
       }
