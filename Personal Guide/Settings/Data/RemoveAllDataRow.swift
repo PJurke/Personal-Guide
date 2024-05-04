@@ -11,11 +11,13 @@ struct RemoveAllDataRow: View {
     
     @Environment(\.modelContext) private var modelContext
     @State private var isDeleting: Bool = false
+    @State private var showErrorMessage: Bool = false
     
     func removeAllData() {
         do {
             try modelContext.delete(model: LifeGoal.self)
         } catch {
+            showErrorMessage = true
             #if DEBUG
             print(error.localizedDescription)
             #endif
@@ -32,6 +34,11 @@ struct RemoveAllDataRow: View {
                 removeAllData()
             }
             Button("Cancel", role: .cancel) {}
+        }
+        .alert("Data.Operations.RemoveAll.Error.Headline", isPresented: $showErrorMessage) {
+            Button("Okay", role: .cancel) {}
+        } message: {
+            Text("Data.Operations.RemoveAll.Error.Description")
         }
         
     }

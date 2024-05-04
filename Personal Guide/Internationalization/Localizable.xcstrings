@@ -228,6 +228,38 @@
         }
       }
     },
+    "Data.Operations.RemoveAll.Error.Description" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Versuch, alle Daten zu entfernen, ist ein Fehler aufgetreten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An error occured while trying to remove all data."
+          }
+        }
+      }
+    },
+    "Data.Operations.RemoveAll.Error.Headline" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entfernen der Daten fehlgeschlagen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Removing the data failed"
+          }
+        }
+      }
+    },
     "Data.Operations.RemoveAll.Label" : {
       "localizations" : {
         "de" : {
@@ -646,6 +678,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No Life Goals Found"
+          }
+        }
+      }
+    },
+    "Okay" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okay"
           }
         }
       }
