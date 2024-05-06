@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */; };
+		76117EA72BE7FB6A00FCD2CC /* AutoFocusedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */; };
 		7620FD9D2BD56FC500F4816C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9C2BD56FC500F4816C /* MainView.swift */; };
 		7620FDA02BD80C1200F4816C /* ExportDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */; };
 		7620FDA22BD813B100F4816C /* DataSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FDA12BD813B100F4816C /* DataSection.swift */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusedModifier.swift; sourceTree = "<group>"; };
 		7620FD9C2BD56FC500F4816C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDataRow.swift; sourceTree = "<group>"; };
 		7620FDA12BD813B100F4816C /* DataSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSection.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 		D4CE12B52B4DD51B00A7172B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */,
 				D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */,
 				76AD79B52BD97489001446DC /* CSVDocument.swift */,
 			);
@@ -481,6 +484,7 @@
 				D4CE12A52B49FD8200A7172B /* ProductionContainer.swift in Sources */,
 				768F38102B6EEA1E005F267C /* AppColorSchemeSection.swift in Sources */,
 				D4CE12A72B49FE0100A7172B /* DataContainerErrorView.swift in Sources */,
+				76117EA72BE7FB6A00FCD2CC /* AutoFocusedModifier.swift in Sources */,
 				768F38042B6EDBC2005F267C /* SettingsView.swift in Sources */,
 				768DDE102BD3053300304665 /* LifeAspectPicker.swift in Sources */,
 				768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */,
