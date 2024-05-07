@@ -394,6 +394,22 @@
         }
       }
     },
+    "LifeGoal.Label" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebensziel"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Life Goal"
+          }
+        }
+      }
+    },
     "LifeGoals.Edit" : {
       "localizations" : {
         "de" : {
