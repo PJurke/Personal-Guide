@@ -27,6 +27,7 @@ struct LifeGoalDetailView: View {
                     
                     Section {
                         TextField("LifeGoals.Example.Name", text: $lifeGoal.name)
+                            .autoFocused()
                     } footer: {
                         Text("LifeGoals.Properties.Name.Description")
                     }

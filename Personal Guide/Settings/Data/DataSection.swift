@@ -13,6 +13,7 @@ struct DataSection: View {
         
         Section("Data") {
             ExportDataRow()
+            RemoveAllDataRow()
         }
         
     }

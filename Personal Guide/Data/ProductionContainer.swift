@@ -31,7 +31,6 @@ func createProductionContainer() throws -> ModelContainer {
     // Try to find or create the container, including scheme, migration plans and the configurations
     return try ModelContainer(
         for: schema,
-        migrationPlan: LifeGoalMigrationPlan.self,
         configurations: [modelConfiguration]
     )
     
