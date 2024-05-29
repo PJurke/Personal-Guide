@@ -11,11 +11,17 @@ struct ShareAppRow: View {
     
     var body: some View {
         
-        ShareLink(
-            item: URL(string: "https://apps.apple.com/de/app/personal-guide/id6475791627")!,
-            subject: Text("App.Share.Subject"),
-            message: Text("App.Share.Message")) {
-            Text("App.Share")
+        SettingsRow(iconName: "square.and.arrow.up.fill", color: .orange) {
+            
+            ShareLink(
+                item: URL(string: "https://apps.apple.com/de/app/personal-guide/id6475791627")!,
+                subject: Text("App.Share.Subject"),
+                message: Text("App.Share.Message")) {
+                    
+                    Text("App.Share")
+                    
+            }
+            
         }
         
     }

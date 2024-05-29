@@ -18,19 +18,23 @@ struct ExportDataRow: View {
     
     var body: some View {
         
-        Button("App.Export.Action") {
-            showingExporter = true
-        }
-        .fileExporter(
-            isPresented: $showingExporter,
-            document: generateCSVDocument(),
-            contentType: .commaSeparatedText,
-            defaultFilename: "Life Goals") { handleExportResult($0)}
-            .alert("App.Export.Failed.Title", isPresented: $didError) {
-                Button("App.Export.Failed.Confirm", role: .cancel) {}
-            } message: {
-                Text("App.Export.Failed.Message")
+        SettingsRow(iconName: "arrow.up.doc.fill", color: .green) {
+            
+            Button("App.Export.Action") {
+                showingExporter = true
             }
+            .fileExporter(
+                isPresented: $showingExporter,
+                document: generateCSVDocument(),
+                contentType: .commaSeparatedText,
+                defaultFilename: "Life Goals") { handleExportResult($0)}
+                .alert("App.Export.Failed.Title", isPresented: $didError) {
+                    Button("App.Export.Failed.Confirm", role: .cancel) {}
+                } message: {
+                    Text("App.Export.Failed.Message")
+                }
+            
+        }
     
     }
     

@@ -26,19 +26,23 @@ struct RemoveAllDataRow: View {
     
     var body: some View {
         
-        Button("Data.Operations.RemoveAll.Label", role: .destructive, action: {
-            isDeleting = true
-        })
-        .alert("Data.Operations.RemoveAll.Confirmation.Headline", isPresented: $isDeleting) {
-            Button("Data.Operations.RemoveAll.Confirmation.Button", role: .destructive) {
-                removeAllData()
+        SettingsRow(iconName: "trash.fill", color: .red) {
+            
+            Button("Data.Operations.RemoveAll.Label", role: .destructive, action: {
+                isDeleting = true
+            })
+            .alert("Data.Operations.RemoveAll.Confirmation.Headline", isPresented: $isDeleting) {
+                Button("Data.Operations.RemoveAll.Confirmation.Button", role: .destructive) {
+                    removeAllData()
+                }
+                Button("Cancel", role: .cancel) {}
             }
-            Button("Cancel", role: .cancel) {}
-        }
-        .alert("Data.Operations.RemoveAll.Error.Headline", isPresented: $showErrorMessage) {
-            Button("Okay", role: .cancel) {}
-        } message: {
-            Text("Data.Operations.RemoveAll.Error.Description")
+            .alert("Data.Operations.RemoveAll.Error.Headline", isPresented: $showErrorMessage) {
+                Button("Okay", role: .cancel) {}
+            } message: {
+                Text("Data.Operations.RemoveAll.Error.Description")
+            }
+            
         }
         
     }
