@@ -13,8 +13,12 @@ struct AppBuildRow: View {
     
     var body: some View {
         
-        LabeledContent("Settings.Versioning.Build.Label") {
-            Text("\(getAppBuildNumber())")
+        SettingsRow(iconName: "hammer.fill", color: .gray) {
+            
+            LabeledContent("Settings.Versioning.Build.Label") {
+                Text("\(getAppBuildNumber())")
+            }
+            
         }
         
     }

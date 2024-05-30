@@ -11,7 +11,9 @@ struct DocumentationLink: View {
     
     var body: some View {
         
-        Link("Documentation.Operations.Open", destination: URL(string: "https://personal-guide.gitbook.io/documentation/")!)
+        SettingsRow(iconName: "doc.text.fill", color: .brown) {
+            Link("Documentation.Operations.Open", destination: URL(string: "https://personal-guide.gitbook.io/documentation/")!)
+        }
         
     }
     
