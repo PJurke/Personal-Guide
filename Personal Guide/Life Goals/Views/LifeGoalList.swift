@@ -32,8 +32,7 @@ struct LifeGoalList: View {
         
         List {
             
-            ForEach(lifeGoals) {
-                goal in
+            ForEach(lifeGoals) { goal in
                 LifeGoalRow(lifeGoal: goal)
                     .onTapGesture {
                         selectedGoal = goal
