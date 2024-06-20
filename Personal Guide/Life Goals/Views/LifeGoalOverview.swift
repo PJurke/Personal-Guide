@@ -12,45 +12,11 @@ struct LifeGoalOverview: View {
     
     @Environment(\.modelContext) private var modelContext
     
-    @State private var addSheetVisible = false
-    
     @Query private var lifeGoals: [LifeGoal]
     
+    @State private var addSheetVisible = false
     @State private var selectedGoal: LifeGoal = LifeGoal()
     @State private var isGoalSelected = false
-    
-    private var lifeGoalList: some View {
-        SearchableLifeGoalList(
-            lifeGoals: lifeGoals,
-            selectedGoal: $selectedGoal,
-            isGoalSelected: $isGoalSelected
-        )
-        .sheet(isPresented: $isGoalSelected) {
-            LifeGoalDetailView(
-                lifeGoal: $selectedGoal,
-                mode: .edit,
-                onComplete: editLifeGoalViewOnDone
-            )
-            .interactiveDismissDisabled()
-        }
-    }
-    
-    private var addLifeGoalButton: some ToolbarContent {
-        ToolbarItem(placement: .confirmationAction) {
-            NavigationBarButton(
-                action: showAddSheet,
-                systemImage: "plus"
-            )
-        }
-    }
-    
-    private var addLifeGoalSheet: some View {
-        LifeGoalDetailView(
-            lifeGoal: .constant(LifeGoal()),
-            mode: .add,
-            onComplete: addLifeGoalOnAdd
-        )
-    }
     
     // Functions
     
@@ -99,6 +65,41 @@ struct LifeGoalOverview: View {
             
         }
         
+    }
+    
+    // Sub Views
+    
+    private var lifeGoalList: some View {
+        SearchableLifeGoalList(
+            lifeGoals: lifeGoals,
+            selectedGoal: $selectedGoal,
+            isGoalSelected: $isGoalSelected
+        )
+        .sheet(isPresented: $isGoalSelected) {
+            LifeGoalDetailView(
+                lifeGoal: $selectedGoal,
+                mode: .edit,
+                onComplete: editLifeGoalViewOnDone
+            )
+            .interactiveDismissDisabled()
+        }
+    }
+    
+    private var addLifeGoalButton: some ToolbarContent {
+        ToolbarItem(placement: .confirmationAction) {
+            NavigationBarButton(
+                action: showAddSheet,
+                systemImage: "plus"
+            )
+        }
+    }
+    
+    private var addLifeGoalSheet: some View {
+        LifeGoalDetailView(
+            lifeGoal: .constant(LifeGoal()),
+            mode: .add,
+            onComplete: addLifeGoalOnAdd
+        )
     }
     
 }
