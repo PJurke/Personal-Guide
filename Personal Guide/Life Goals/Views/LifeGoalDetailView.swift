@@ -98,28 +98,32 @@ struct LifeGoalDetailView: View {
 
 #Preview("LifeGoalDetailView (add, EN)") {
     LifeGoalDetailView(lifeGoal: nil)
+        .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "en"))
 }
 
-//#Preview("LifeGoalDetailView (add, DE)") {
-//    LifeGoalDetailView(lifeGoal: nil)
-//        .environment(\.locale, .init(identifier: "de"))
-//}
-//
-//#Preview("LifeGoalDetailView (edit, EN)") {
-//    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
-//    
-//    return LifeGoalDetailView(
-//        lifeGoal: nil // To do
-//    )
-//    .environment(\.locale, .init(identifier: "en"))
-//}
-//
-//#Preview("LifeGoalDetailView (edit, DE)") {
-//    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
-//    
-//    return LifeGoalDetailView(
-//        lifeGoal: nil // To do
-//    )
-//    .environment(\.locale, .init(identifier: "de"))
-//}
+#Preview("LifeGoalDetailView (add, DE)") {
+    LifeGoalDetailView(lifeGoal: nil)
+        .modelContainer(previewContainer)
+        .environment(\.locale, .init(identifier: "de"))
+}
+
+#Preview("LifeGoalDetailView (edit, EN)") {
+    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+    
+    return LifeGoalDetailView(
+        lifeGoal: nil // To do
+    )
+    .modelContainer(previewContainer)
+    .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("LifeGoalDetailView (edit, DE)") {
+    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+    
+    return LifeGoalDetailView(
+        lifeGoal: nil // To do
+    )
+    .modelContainer(previewContainer)
+    .environment(\.locale, .init(identifier: "de"))
+}
