@@ -78,13 +78,17 @@ struct LifeGoalDetailView: View {
     // Functions
     
     private func save() {
+        
+        // Check if name is empty. If yes, set default value
+        let goalName = name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? String(localized:  "LifeGoals.Properties.Name.NewDefault") : name
+        
         if let lifeGoal {
             lifeGoal.aspect = lifeAspect
             lifeGoal.isAchieved = isAchieved
-            lifeGoal.name = name
+            lifeGoal.name = goalName
         } else {
             let newGoal = LifeGoal(
-                name,
+                goalName,
                 aspect: lifeAspect,
                 isAchieved: isAchieved
             )
