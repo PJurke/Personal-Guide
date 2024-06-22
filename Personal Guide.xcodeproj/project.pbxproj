@@ -44,7 +44,6 @@
 		D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */; };
 		D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */; };
 		D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */; };
-		D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */; };
 		D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,7 +107,6 @@
 		D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailView.swift; sourceTree = "<group>"; };
 		D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalList.swift; sourceTree = "<group>"; };
 		D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalOverview.swift; sourceTree = "<group>"; };
-		D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailMode.swift; sourceTree = "<group>"; };
 		D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -315,7 +313,6 @@
 				D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */,
 				D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */,
 				765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */,
-				D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */,
 				D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */,
 			);
 			path = Views;
@@ -495,7 +492,6 @@
 				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalSearchResult.swift in Sources */,
 				D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */,
 				768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */,
-				D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
