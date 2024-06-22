@@ -10,103 +10,116 @@ import SwiftUI
 
 struct LifeGoalDetailView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var modelContext
     
-    @Binding var lifeGoal: LifeGoal
-    var mode: LifeGoalDetailMode
-    var onComplete: (LifeGoal) -> Void
+    var lifeGoal: LifeGoal?
+    
+    @State private var isAchieved: Bool = false
+    @State private var lifeAspect: LifeAspect = LifeAspect.unknown
+    @State private var name: String = ""
+    
+    // Computed Properties
+    
+    private var navigationTitle: String {
+        lifeGoal == nil ? String(localized: "LifeGoals.New") : String(localized: "LifeGoals.Edit")
+    }
+    
+    private var confirmationLabel: String {
+        lifeGoal == nil ? String(localized: "LifeGoals.Operations.Add") : String(localized: "LifeGoals.Operations.Save")
+    }
     
     // Body
     
     var body: some View {
-            
+        
         NavigationStack {
-            VStack {
-                
-                Form {
-                    
-                    Section {
-                        TextField("LifeGoals.Example.Name", text: $lifeGoal.name)
-                            .autoFocused()
-                    } footer: {
-                        Text("LifeGoals.Properties.Name.Description")
-                    }
-                    
-                    Section {
-                        LifeAspectPicker(selection: $lifeGoal.aspect)
-                    }
-                    
-                    Toggle("LifeGoals.Properties.IsAchieved", isOn: $lifeGoal.isAchieved)
-                    
+            
+            Form {
+                Section {
+                    TextField("LifeGoals.Example.Name", text: $name)
+                        .autoFocused()
+                } footer: {
+                    Text("LifeGoals.Properties.Name.Description")
                 }
                 
+                Section {
+                    LifeAspectPicker(selection: $lifeAspect)
+                }
+                
+                Toggle("LifeGoals.Properties.IsAchieved", isOn: $isAchieved)
             }
-            .navigationTitle(mode.localized)
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                if mode == .add {
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button(action: {
+                ToolbarItem(placement: .principal) {
+                    Text(navigationTitle)
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button(confirmationLabel) {
+                        withAnimation {
+                            save()
                             dismiss()
-                        }) {
-                            Text("LifeGoals.Operations.Cancel")
                         }
                     }
                 }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(action: {
-                        onComplete(lifeGoal)
-                    }) {
-                        Text(mode == .add ? "LifeGoals.Operations.Add" : "LifeGoals.Operations.Done")
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("LifeGoals.Operations.Cancel", role: .cancel) {
+                        dismiss()
                     }
                 }
+            }
+            .onAppear {
+                if let lifeGoal {
+                    isAchieved = lifeGoal.isAchieved
+                    lifeAspect = lifeGoal.aspect
+                    name = lifeGoal.name
+                }
+            }
         }
+    }
+    
+    // Functions
+    
+    private func save() {
+        if let lifeGoal {
+            lifeGoal.aspect = lifeAspect
+            lifeGoal.isAchieved = isAchieved
+            lifeGoal.name = name
+        } else {
+            let newGoal = LifeGoal(
+                name,
+                aspect: lifeAspect,
+                isAchieved: isAchieved
+            )
+            modelContext.insert(newGoal)
         }
-        
     }
     
 }
 
 #Preview("LifeGoalDetailView (add, EN)") {
-    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
-    
-    return LifeGoalDetailView(
-        lifeGoal: .constant(goal),
-        mode: .add,
-        onComplete: { _ in }
-    )
-    .environment(\.locale, .init(identifier: "en"))
+    LifeGoalDetailView(lifeGoal: nil)
+        .environment(\.locale, .init(identifier: "en"))
 }
 
-#Preview("LifeGoalDetailView (add, DE)") {
-    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
-    
-    return LifeGoalDetailView(
-        lifeGoal: .constant(goal),
-        mode: .add,
-        onComplete: { _ in }
-    )
-    .environment(\.locale, .init(identifier: "de"))
-}
-
-#Preview("LifeGoalDetailView (edit, EN)") {
-    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
-    
-    return LifeGoalDetailView(
-        lifeGoal: .constant(goal),
-        mode: .edit,
-        onComplete: { _ in }
-    )
-    .environment(\.locale, .init(identifier: "en"))
-}
-
-#Preview("LifeGoalDetailView (edit, DE)") {
-    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
-    
-    return LifeGoalDetailView(
-        lifeGoal: .constant(goal),
-        mode: .edit,
-        onComplete: { _ in }
-    )
-    .environment(\.locale, .init(identifier: "de"))
-}
+//#Preview("LifeGoalDetailView (add, DE)") {
+//    LifeGoalDetailView(lifeGoal: nil)
+//        .environment(\.locale, .init(identifier: "de"))
+//}
+//
+//#Preview("LifeGoalDetailView (edit, EN)") {
+//    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+//    
+//    return LifeGoalDetailView(
+//        lifeGoal: nil // To do
+//    )
+//    .environment(\.locale, .init(identifier: "en"))
+//}
+//
+//#Preview("LifeGoalDetailView (edit, DE)") {
+//    let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
+//    
+//    return LifeGoalDetailView(
+//        lifeGoal: nil // To do
+//    )
+//    .environment(\.locale, .init(identifier: "de"))
+//}

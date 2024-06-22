@@ -77,9 +77,7 @@ struct LifeGoalOverview: View {
         )
         .sheet(isPresented: $isGoalSelected) {
             LifeGoalDetailView(
-                lifeGoal: $selectedGoal,
-                mode: .edit,
-                onComplete: editLifeGoalViewOnDone
+                lifeGoal: selectedGoal // tBD
             )
             .interactiveDismissDisabled()
         }
@@ -95,11 +93,7 @@ struct LifeGoalOverview: View {
     }
     
     private var addLifeGoalSheet: some View {
-        LifeGoalDetailView(
-            lifeGoal: .constant(LifeGoal()),
-            mode: .add,
-            onComplete: addLifeGoalOnAdd
-        )
+        LifeGoalDetailView(lifeGoal: nil)
     }
     
 }

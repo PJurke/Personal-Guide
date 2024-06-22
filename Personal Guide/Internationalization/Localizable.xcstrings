@@ -554,18 +554,18 @@
         }
       }
     },
-    "LifeGoals.Operations.Done" : {
+    "LifeGoals.Operations.Save" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fertig"
+            "value" : "Speichern"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Done"
+            "value" : "Save"
           }
         }
       }
