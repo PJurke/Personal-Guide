@@ -34,7 +34,6 @@ struct LifeGoalDetailView: View {
     var body: some View {
         
         NavigationStack {
-            
             Form {
                 Section {
                     TextField("LifeGoals.Example.Name", text: $name)
@@ -49,10 +48,9 @@ struct LifeGoalDetailView: View {
                 
                 Toggle("LifeGoals.Properties.IsAchieved", isOn: $isAchieved)
             }
+            .navigationTitle(navigationTitle)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text(navigationTitle)
-                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(confirmationLabel) {
                         withAnimation {
