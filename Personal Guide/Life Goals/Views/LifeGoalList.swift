@@ -12,6 +12,7 @@ struct LifeGoalList: View {
     
     @Environment(\.modelContext) private var modelContext
     @Environment(\.isSearching) private var isSearching: Bool
+    
     var lifeGoals: [LifeGoal]
     @Binding var selectedGoal: LifeGoal
     @Binding var isGoalSelected: Bool
@@ -19,19 +20,15 @@ struct LifeGoalList: View {
     // Functions
     
     private func removeLifeGoal(at offsets: IndexSet) {
-        
         for index in offsets {
             modelContext.delete(lifeGoals[index])
         }
-        
     }
     
     // Body
     
     var body: some View {
-        
         List {
-            
             ForEach(lifeGoals) { goal in
                 LifeGoalRow(lifeGoal: goal)
                     .onTapGesture {
