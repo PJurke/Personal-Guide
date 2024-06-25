@@ -8,6 +8,10 @@
 import SwiftData
 import SwiftUI
 
+private enum LifeGoalDetailMode {
+    case create, edit
+}
+
 struct LifeGoalDetailView: View {
     
     @Environment(\.dismiss) private var dismiss
@@ -21,12 +25,16 @@ struct LifeGoalDetailView: View {
     
     // Computed Properties
     
+    private var sheetMode: LifeGoalDetailMode {
+        lifeGoal == nil ? .create : .edit
+    }
+    
     private var navigationTitle: String {
-        lifeGoal == nil ? String(localized: "LifeGoals.New") : String(localized: "LifeGoals.Edit")
+        sheetMode == .create ? String(localized: "LifeGoals.New") : String(localized: "LifeGoals.Edit")
     }
     
     private var confirmationLabel: String {
-        lifeGoal == nil ? String(localized: "LifeGoals.Operations.Add") : String(localized: "LifeGoals.Operations.Save")
+        sheetMode == .create ? String(localized: "LifeGoals.Operations.Add") : String(localized: "LifeGoals.Operations.Save")
     }
     
     // Body
@@ -72,6 +80,7 @@ struct LifeGoalDetailView: View {
                     name = lifeGoal.name
                 }
             }
+            .interactiveDismissDisabled(sheetMode == .edit)
         }
     }
     

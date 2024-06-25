@@ -79,7 +79,6 @@ struct LifeGoalOverview: View {
             LifeGoalDetailView(
                 lifeGoal: selectedGoal // tBD
             )
-            .interactiveDismissDisabled()
         }
     }
     
