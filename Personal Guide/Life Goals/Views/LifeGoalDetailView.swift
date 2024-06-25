@@ -17,7 +17,7 @@ struct LifeGoalDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
     
-    var lifeGoal: LifeGoal?
+    var lifeGoal: LifeGoal? = nil
     
     @State private var isAchieved: Bool = false
     @State private var lifeAspect: LifeAspect = LifeAspect.unknown

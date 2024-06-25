@@ -92,7 +92,7 @@ struct LifeGoalOverview: View {
     }
     
     private var addLifeGoalSheet: some View {
-        LifeGoalDetailView(lifeGoal: nil)
+        LifeGoalDetailView()
     }
     
 }
