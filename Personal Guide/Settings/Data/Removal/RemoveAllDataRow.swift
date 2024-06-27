@@ -10,14 +10,16 @@ import SwiftUI
 struct RemoveAllDataRow: View {
     
     @Environment(\.modelContext) private var modelContext
-    @State private var isDeleting: Bool = false
-    @State private var showErrorMessage: Bool = false
+    @State private var showRemovalAlert: Bool = false
+    @State private var showSuccessfulAlert: Bool = false
+    @State private var showErrorAlert: Bool = false
     
     func removeAllData() {
         do {
             try modelContext.delete(model: LifeGoal.self)
+            showSuccessfulAlert = true
         } catch {
-            showErrorMessage = true
+            showErrorAlert = true
             #if DEBUG
             print(error.localizedDescription)
             #endif
@@ -29,19 +31,11 @@ struct RemoveAllDataRow: View {
         SettingsRow(iconName: "trash.fill", color: .red) {
             
             Button("Data.Operations.RemoveAll.Label", role: .destructive, action: {
-                isDeleting = true
+                showRemovalAlert = true
             })
-            .alert("Data.Operations.RemoveAll.Confirmation.Headline", isPresented: $isDeleting) {
-                Button("Data.Operations.RemoveAll.Confirmation.Button", role: .destructive) {
-                    removeAllData()
-                }
-                Button("Cancel", role: .cancel) {}
-            }
-            .alert("Data.Operations.RemoveAll.Error.Headline", isPresented: $showErrorMessage) {
-                Button("Okay", role: .cancel) {}
-            } message: {
-                Text("Data.Operations.RemoveAll.Error.Description")
-            }
+            .removalConfirmation(isAlertPresented: $showRemovalAlert, onConfirmRemoval: removeAllData)
+            .removalSuccessful(isAlertPresented: $showSuccessfulAlert)
+            .removalError(isAlertPresented: $showErrorAlert)
             
         }
         

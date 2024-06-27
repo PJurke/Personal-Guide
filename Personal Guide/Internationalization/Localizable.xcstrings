@@ -276,6 +276,38 @@
         }
       }
     },
+    "Data.Operations.RemoveAll.Successful.Description" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Daten wurden gelöscht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All data has been removed."
+          }
+        }
+      }
+    },
+    "Data.Operations.RemoveAll.Successful.Headline" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entfernen erfolgreich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Removal successful"
+          }
+        }
+      }
+    },
     "Documentation.Operations.Open" : {
       "localizations" : {
         "de" : {
