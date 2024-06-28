@@ -83,11 +83,8 @@ struct LifeGoalOverview: View {
     }
     
     private var addLifeGoalButton: some ToolbarContent {
-        ToolbarItem(placement: .confirmationAction) {
-            NavigationBarButton(
-                action: showAddSheet,
-                systemImage: "plus"
-            )
+        ToolbarItem(placement: .primaryAction) {
+            Button("", systemImage: "plus", action: showAddSheet)
         }
     }
     

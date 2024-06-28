@@ -47,7 +47,6 @@
 		D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */; };
 		D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */; };
 		D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */; };
-		D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +112,6 @@
 		D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailView.swift; sourceTree = "<group>"; };
 		D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalList.swift; sourceTree = "<group>"; };
 		D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalOverview.swift; sourceTree = "<group>"; };
-		D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,7 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */,
-				D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */,
 				76AD79B52BD97489001446DC /* CSVDocument.swift */,
 			);
 			path = Common;
@@ -480,7 +477,6 @@
 			files = (
 				7620FD9D2BD56FC500F4816C /* MainView.swift in Sources */,
 				768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */,
-				D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */,
 				7620FDA02BD80C1200F4816C /* ExportDataRow.swift in Sources */,
 				768F37FD2B6ED923005F267C /* AppVersionRow.swift in Sources */,
 				768F37FF2B6EDB11005F267C /* AppBuildRow.swift in Sources */,
