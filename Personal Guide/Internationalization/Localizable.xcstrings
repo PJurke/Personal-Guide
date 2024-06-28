@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
     "%@" : {
 
     },
@@ -649,22 +646,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "When choosing a name, opt for one or two easy-to-remember words. A combination of a verb and a noun usually works best."
-          }
-        }
-      }
-    },
-    "LifeGoals.Properties.Name.EditDefault" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lebensziel"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Life Goal"
           }
         }
       }

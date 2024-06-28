@@ -17,7 +17,7 @@ struct LifeGoalDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
     
-    var lifeGoal: LifeGoal? = nil
+    @State var lifeGoal: LifeGoal? = nil
     
     @State private var isAchieved: Bool = false
     @State private var lifeAspect: LifeAspect = LifeAspect.unknown
@@ -29,12 +29,12 @@ struct LifeGoalDetailView: View {
         lifeGoal == nil ? .create : .edit
     }
     
-    private var navigationTitle: String {
-        sheetMode == .create ? String(localized: "LifeGoals.New") : String(localized: "LifeGoals.Edit")
+    private var navigationTitle: LocalizedStringKey {
+        sheetMode == .create ? LocalizedStringKey("LifeGoals.New") : LocalizedStringKey("LifeGoals.Edit")
     }
     
-    private var confirmationLabel: String {
-        sheetMode == .create ? String(localized: "LifeGoals.Operations.Add") : String(localized: "LifeGoals.Operations.Save")
+    private var confirmationLabel: LocalizedStringKey {
+        sheetMode == .create ? LocalizedStringKey("LifeGoals.Operations.Add") : LocalizedStringKey("LifeGoals.Operations.Save")
     }
     
     // Body
