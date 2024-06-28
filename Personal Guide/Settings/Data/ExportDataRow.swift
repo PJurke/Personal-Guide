@@ -11,8 +11,8 @@ import SwiftUI
 struct ExportDataRow: View {
     
     @Query private let goals: [LifeGoal]
-    @State private var showingExporter = false
-    @State private var didError = false
+    @State private var isShowingExporter = false
+    @State private var didEncounterError = false
     
     // View
     
@@ -21,19 +21,20 @@ struct ExportDataRow: View {
         SettingsRow(iconName: "arrow.up.doc.fill", color: .green) {
             
             Button("App.Export.Action") {
-                showingExporter = true
+                isShowingExporter = true
             }
             .fileExporter(
-                isPresented: $showingExporter,
+                isPresented: $isShowingExporter,
                 document: generateCSVDocument(),
                 contentType: .commaSeparatedText,
-                defaultFilename: "Life Goals") { handleExportResult($0)}
-                .alert("App.Export.Failed.Title", isPresented: $didError) {
-                    Button("App.Export.Failed.Confirm", role: .cancel) {}
-                } message: {
-                    Text("App.Export.Failed.Message")
-                }
-            
+                defaultFilename: "Life Goals",
+                onCompletion: handleExportResult
+            )
+            .alert("App.Export.Failed.Title", isPresented: $didEncounterError) {
+                Button("App.Export.Failed.Confirm", role: .cancel) {}
+            } message: {
+                Text("App.Export.Failed.Message")
+            }
         }
     
     }
@@ -47,13 +48,11 @@ struct ExportDataRow: View {
         let csvString = heading + rows.joined(separator: "\n")
         
         return CSVDocument(text: csvString)
-        
     }
     
     private func handleExportResult(_ result: Result<URL, Error>) {
         
         switch result {
-            
         case .success(let url):
             #if DEBUG
             print("Exported successfully to \(url)")
@@ -63,8 +62,7 @@ struct ExportDataRow: View {
             #if DEBUG
             print("Exported successfully to \(error)")
             #endif
-            didError = true
-            
+            didEncounterError = true
         }
     }
     
