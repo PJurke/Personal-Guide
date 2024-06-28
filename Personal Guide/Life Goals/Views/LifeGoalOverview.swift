@@ -18,7 +18,8 @@ struct LifeGoalOverview: View {
     
     // Functions
     
-    private func showSheet() {
+    private func showNewLifeGoalSheet() {
+        selectedGoal = nil
         isSheetVisible = true
     }
     
@@ -28,7 +29,7 @@ struct LifeGoalOverview: View {
         NavigationStack {
             VStack {
                 if lifeGoals.isEmpty {
-                    NoLifeGoalsView(action: showSheet)
+                    NoLifeGoalsView(action: showNewLifeGoalSheet)
                 } else {
                     lifeGoalList
                 }
@@ -49,10 +50,7 @@ struct LifeGoalOverview: View {
     
     private var addLifeGoalButton: some ToolbarContent {
         ToolbarItem(placement: .primaryAction) {
-            Button(action: {
-                selectedGoal = nil
-                showSheet()
-            }) {
+            Button(action: showNewLifeGoalSheet) {
                 Image(systemName: "plus")
             }
         }
