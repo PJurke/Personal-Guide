@@ -15,7 +15,7 @@ struct LifeGoalOverview: View {
     @Query private var lifeGoals: [LifeGoal]
     
     @State private var addSheetVisible = false
-    @State private var selectedGoal: LifeGoal = LifeGoal()
+    @State private var selectedGoal: LifeGoal?
     @State private var isGoalSelected = false
     
     // Functions

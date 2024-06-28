@@ -11,7 +11,7 @@ import SwiftData
 struct SearchableLifeGoalList: View {
     
     var lifeGoals: [LifeGoal]
-    @Binding var selectedGoal: LifeGoal
+    @Binding var selectedGoal: LifeGoal?
     @Binding var isGoalSelected: Bool
     @State private var searchText: String = ""
     
@@ -44,7 +44,7 @@ struct SearchableLifeGoalList: View {
 
 #Preview("SearchableLifeGoalList (EN)") {
     let goals = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>())
-    @State var firstGoal = goals.first!
+    @State var firstGoal: LifeGoal? = goals.first
     @State var isGoalSelected = false
     
     return SearchableLifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)
@@ -54,7 +54,7 @@ struct SearchableLifeGoalList: View {
 
 #Preview("SearchableLifeGoalList (DE)") {
     let goals = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>())
-    @State var firstGoal = goals.first!
+    @State var firstGoal: LifeGoal? = goals.first
     @State var isGoalSelected = false
     
     return SearchableLifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)

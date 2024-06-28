@@ -14,7 +14,7 @@ struct LifeGoalList: View {
     @Environment(\.isSearching) private var isSearching: Bool
     
     var lifeGoals: [LifeGoal]
-    @Binding var selectedGoal: LifeGoal
+    @Binding var selectedGoal: LifeGoal?
     @Binding var isGoalSelected: Bool
     
     // Functions
@@ -50,7 +50,7 @@ struct LifeGoalList: View {
 
 #Preview("LifeGoalList (EN)") {
     let goals = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>())
-    @State var firstGoal = goals.first!
+    @State var firstGoal: LifeGoal? = goals.first
     @State var isGoalSelected = false
     
     return LifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)
@@ -60,7 +60,7 @@ struct LifeGoalList: View {
 
 #Preview("LifeGoalList (DE)") {
     let goals = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>())
-    @State var firstGoal = goals.first!
+    @State var firstGoal: LifeGoal? = goals.first
     @State var isGoalSelected = false
     
     return LifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)
