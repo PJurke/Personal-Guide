@@ -23,6 +23,7 @@ struct DataSection: View {
     Form {
         DataSection()
     }
+    .modelContainer(previewContainer)
     .environment(\.locale, .init(identifier: "en"))
 }
 
@@ -30,5 +31,6 @@ struct DataSection: View {
     Form {
         DataSection()
     }
+    .modelContainer(previewContainer)
     .environment(\.locale, .init(identifier: "de"))
 }
