@@ -37,6 +37,17 @@ struct LifeGoalDetailView: View {
         sheetMode == .create ? LocalizedStringKey("LifeGoals.Operations.Add") : LocalizedStringKey("LifeGoals.Operations.Save")
     }
     
+    private var placeholderExample: LocalizedStringKey {
+        let examples : [LocalizedStringKey] = [
+            "LifeGoals.Example.Marathon",
+            "LifeGoals.Example.Skydiving",
+            "LifeGoals.Example.TeamLeading",
+            "LifeGoals.Example.Tree",
+            "LifeGoals.Example.WorldTour"
+        ]
+        return examples.randomElement()!
+    }
+    
     // Body
     
     var body: some View {
@@ -44,7 +55,7 @@ struct LifeGoalDetailView: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("LifeGoals.Example.Name", text: $name)
+                    TextField(placeholderExample, text: $name)
                         .autoFocused()
                 } footer: {
                     Text("LifeGoals.Properties.Name.Description")

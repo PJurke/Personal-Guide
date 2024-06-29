@@ -458,7 +458,23 @@
         }
       }
     },
-    "LifeGoals.Example.Name" : {
+    "LifeGoals.Example.Marathon" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einen Marathon laufen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Run a Marathon"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.Skydiving" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -469,7 +485,55 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Going Skydiving"
+            "value" : "Go Skydiving"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.TeamLeading" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Team führen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lead a Team"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.Tree" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einen Baum pflanzen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plant a Tree"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.WorldTour" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf eine Weltreise gehen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go on a World Tour"
           }
         }
       }
