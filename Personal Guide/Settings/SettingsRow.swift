@@ -42,6 +42,6 @@ struct SettingsRow<Content: View>: View {
 
 #Preview {
     SettingsRow(iconName: "trash") {
-        Text("Delete Item")
+        Text("Data.Operations.RemoveAll.Label")
     }
 }
