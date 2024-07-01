@@ -17,14 +17,6 @@ struct LifeGoalList: View {
     @Binding var selectedGoal: LifeGoal?
     @Binding var isGoalSelected: Bool
     
-    // Functions
-    
-    private func removeLifeGoal(at offsets: IndexSet) {
-        for index in offsets {
-            modelContext.delete(lifeGoals[index])
-        }
-    }
-    
     // Body
     
     var body: some View {
@@ -32,8 +24,10 @@ struct LifeGoalList: View {
             ForEach(lifeGoals) { goal in
                 LifeGoalRow(lifeGoal: goal)
                     .onTapGesture {
-                        selectedGoal = goal
-                        isGoalSelected = true
+                        handleTapGesture(for: goal)
+                    }
+                    .swipeActions(edge: .leading) {
+                        toggleAchievementButton(for: goal)
                     }
             }
             .onDelete(perform: removeLifeGoal)
@@ -44,6 +38,28 @@ struct LifeGoalList: View {
             }
         }
         
+    }
+    
+    // Functions
+    
+    private func handleTapGesture(for goal: LifeGoal) {
+        selectedGoal = goal
+        isGoalSelected = true
+    }
+    
+    private func removeLifeGoal(at offsets: IndexSet) {
+        for index in offsets {
+            modelContext.delete(lifeGoals[index])
+        }
+    }
+    
+    private func toggleAchievementButton(for goal: LifeGoal) -> some View {
+        Button {
+            goal.isAchieved.toggle()
+        } label: {
+            Label("Achieve", systemImage: "checkmark.circle")
+        }
+        .tint(.green)
     }
     
 }
