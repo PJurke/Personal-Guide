@@ -19,6 +19,7 @@ struct LifeGoalDetailView: View {
     
     @State var lifeGoal: LifeGoal? = nil
     
+    @State private var lifeGoalExample: LocalizedStringKey = ""
     @State private var isAchieved: Bool = false
     @State private var lifeAspect: LifeAspect = LifeAspect.unknown
     @State private var name: String = ""
@@ -37,17 +38,6 @@ struct LifeGoalDetailView: View {
         sheetMode == .create ? LocalizedStringKey("LifeGoals.Operations.Add") : LocalizedStringKey("LifeGoals.Operations.Save")
     }
     
-    private var placeholderExample: LocalizedStringKey {
-        let examples : [LocalizedStringKey] = [
-            "LifeGoals.Example.Marathon",
-            "LifeGoals.Example.Skydiving",
-            "LifeGoals.Example.TeamLeading",
-            "LifeGoals.Example.Tree",
-            "LifeGoals.Example.WorldTour"
-        ]
-        return examples.randomElement()!
-    }
-    
     // Body
     
     var body: some View {
@@ -55,7 +45,7 @@ struct LifeGoalDetailView: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField(placeholderExample, text: $name)
+                    TextField(lifeGoalExample, text: $name)
                         .autoFocused()
                 } footer: {
                     Text("LifeGoals.Properties.Name.Description")
@@ -90,6 +80,7 @@ struct LifeGoalDetailView: View {
                     lifeAspect = lifeGoal.aspect
                     name = lifeGoal.name
                 }
+                lifeGoalExample = LifeGoal.getRandomExample()
             }
             .interactiveDismissDisabled(sheetMode == .edit)
         }
