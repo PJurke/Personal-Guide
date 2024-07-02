@@ -23,6 +23,7 @@ struct LifeGoalRow: View {
             if lifeGoal.isAchieved {
                 Image(systemName: "checkmark.circle")
                     .foregroundColor(.green)
+                    .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/, value: lifeGoal.isAchieved)
             }
             
         }

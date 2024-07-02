@@ -15,6 +15,9 @@
 		7620FDA22BD813B100F4816C /* DataSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FDA12BD813B100F4816C /* DataSection.swift */; };
 		765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */; };
 		765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */; };
+		767A939B2C2D78E80081C7F1 /* DataRemovalSuccessful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A939A2C2D78E80081C7F1 /* DataRemovalSuccessful.swift */; };
+		767A939D2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A939C2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift */; };
+		767A93A02C2DF22E0081C7F1 /* DataRemovalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A939F2C2DF22E0081C7F1 /* DataRemovalError.swift */; };
 		7680BBFF2BE967FC00FC8EFD /* LifeGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7680BBFE2BE967FC00FC8EFD /* LifeGoal.swift */; };
 		768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0C2BD3053300304665 /* LifeAspect.swift */; };
 		768DDE102BD3053300304665 /* LifeAspectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0D2BD3053300304665 /* LifeAspectPicker.swift */; };
@@ -44,8 +47,6 @@
 		D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */; };
 		D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */; };
 		D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */; };
-		D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */; };
-		D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,9 @@
 		7620FDA12BD813B100F4816C /* DataSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSection.swift; sourceTree = "<group>"; };
 		765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
 		765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableLifeGoalList.swift; sourceTree = "<group>"; };
+		767A939A2C2D78E80081C7F1 /* DataRemovalSuccessful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRemovalSuccessful.swift; sourceTree = "<group>"; };
+		767A939C2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRemovalConfirmation.swift; sourceTree = "<group>"; };
+		767A939F2C2DF22E0081C7F1 /* DataRemovalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRemovalError.swift; sourceTree = "<group>"; };
 		7680BBFE2BE967FC00FC8EFD /* LifeGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoal.swift; sourceTree = "<group>"; };
 		768DDE0C2BD3053300304665 /* LifeAspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspect.swift; sourceTree = "<group>"; };
 		768DDE0D2BD3053300304665 /* LifeAspectPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspectPicker.swift; sourceTree = "<group>"; };
@@ -108,8 +112,6 @@
 		D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailView.swift; sourceTree = "<group>"; };
 		D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalList.swift; sourceTree = "<group>"; };
 		D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalOverview.swift; sourceTree = "<group>"; };
-		D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailMode.swift; sourceTree = "<group>"; };
-		D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,11 +150,22 @@
 		7620FD9E2BD80BE400F4816C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				767A939E2C2DF20E0081C7F1 /* Removal */,
 				7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */,
-				76DA2BE92BE01678003CAFAB /* RemoveAllDataRow.swift */,
 				7620FDA12BD813B100F4816C /* DataSection.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		767A939E2C2DF20E0081C7F1 /* Removal */ = {
+			isa = PBXGroup;
+			children = (
+				76DA2BE92BE01678003CAFAB /* RemoveAllDataRow.swift */,
+				767A939C2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift */,
+				767A939F2C2DF22E0081C7F1 /* DataRemovalError.swift */,
+				767A939A2C2D78E80081C7F1 /* DataRemovalSuccessful.swift */,
+			);
+			path = Removal;
 			sourceTree = "<group>";
 		};
 		768DDE0E2BD3053300304665 /* Life Aspect */ = {
@@ -315,7 +328,6 @@
 				D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */,
 				D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */,
 				765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */,
-				D4CE12B32B4DD29B00A7172B /* LifeGoalDetailMode.swift */,
 				D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */,
 			);
 			path = Views;
@@ -325,7 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */,
-				D4CE12B62B4DD52900A7172B /* NavigationBarButton.swift */,
 				76AD79B52BD97489001446DC /* CSVDocument.swift */,
 			);
 			path = Common;
@@ -466,7 +477,6 @@
 			files = (
 				7620FD9D2BD56FC500F4816C /* MainView.swift in Sources */,
 				768F38022B6EDB70005F267C /* AppVersionSection.swift in Sources */,
-				D4CE12B72B4DD52900A7172B /* NavigationBarButton.swift in Sources */,
 				7620FDA02BD80C1200F4816C /* ExportDataRow.swift in Sources */,
 				768F37FD2B6ED923005F267C /* AppVersionRow.swift in Sources */,
 				768F37FF2B6EDB11005F267C /* AppBuildRow.swift in Sources */,
@@ -481,11 +491,14 @@
 				76117EA72BE7FB6A00FCD2CC /* AutoFocusedModifier.swift in Sources */,
 				768F38042B6EDBC2005F267C /* SettingsView.swift in Sources */,
 				768DDE102BD3053300304665 /* LifeAspectPicker.swift in Sources */,
+				767A939B2C2D78E80081C7F1 /* DataRemovalSuccessful.swift in Sources */,
 				768F380E2B6EE78E005F267C /* AppColorSchemeModifier.swift in Sources */,
 				7620FDA22BD813B100F4816C /* DataSection.swift in Sources */,
 				D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */,
+				767A93A02C2DF22E0081C7F1 /* DataRemovalError.swift in Sources */,
 				76AD79B62BD97489001446DC /* CSVDocument.swift in Sources */,
 				760DD4202C07A06F00278F34 /* SettingsRow.swift in Sources */,
+				767A939D2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift in Sources */,
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
 				7680BBFF2BE967FC00FC8EFD /* LifeGoal.swift in Sources */,
@@ -495,7 +508,6 @@
 				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalSearchResult.swift in Sources */,
 				D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */,
 				768F380C2B6EE746005F267C /* AppColorScheme.swift in Sources */,
-				D4CE12B42B4DD29B00A7172B /* LifeGoalDetailMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

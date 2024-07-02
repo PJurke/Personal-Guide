@@ -1,7 +1,13 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%@" : {
+
+    },
+    "Achieve" : {
 
     },
     "App.Export.Action" : {
@@ -276,6 +282,38 @@
         }
       }
     },
+    "Data.Operations.RemoveAll.Successful.Description" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Daten wurden gelöscht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All data has been removed."
+          }
+        }
+      }
+    },
+    "Data.Operations.RemoveAll.Successful.Headline" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entfernen erfolgreich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Removal successful"
+          }
+        }
+      }
+    },
     "Documentation.Operations.Open" : {
       "localizations" : {
         "de" : {
@@ -426,7 +464,23 @@
         }
       }
     },
-    "LifeGoals.Example.Name" : {
+    "LifeGoals.Example.Marathon" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einen Marathon laufen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Run a Marathon"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.Skydiving" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -437,7 +491,55 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Going Skydiving"
+            "value" : "Go Skydiving"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.TeamLeading" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Team führen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lead a Team"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.Tree" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einen Baum pflanzen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plant a Tree"
+          }
+        }
+      }
+    },
+    "LifeGoals.Example.WorldTour" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf eine Weltreise gehen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go on a World Tour"
           }
         }
       }
@@ -554,18 +656,18 @@
         }
       }
     },
-    "LifeGoals.Operations.Done" : {
+    "LifeGoals.Operations.Save" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fertig"
+            "value" : "Speichern"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Done"
+            "value" : "Save"
           }
         }
       }
@@ -614,22 +716,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "When choosing a name, opt for one or two easy-to-remember words. A combination of a verb and a noun usually works best."
-          }
-        }
-      }
-    },
-    "LifeGoals.Properties.Name.EditDefault" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lebensziel"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Life Goal"
           }
         }
       }

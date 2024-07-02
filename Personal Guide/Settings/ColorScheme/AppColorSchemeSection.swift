@@ -14,17 +14,13 @@ struct AppColorSchemeSection: View {
     var body: some View {
         
         Section("Settings.ColorScheme.Section") {
-            
             SettingsRow(iconName: "paintpalette.fill", color: .purple) {
-                
                 Picker("Settings.ColorScheme.Label", selection: $appColorScheme) {
                     ForEach(AppColorScheme.allCases, id: \.self) { value in
                         Text(value.localizedName)
                     }
                 }
-                
             }
-            
         }
         
     }

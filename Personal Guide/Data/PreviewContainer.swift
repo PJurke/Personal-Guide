@@ -17,13 +17,13 @@ let previewContainer: ModelContainer = {
         let container = try ModelContainer(for: schema, configurations: [config])
         
         // Inserts
-        container.mainContext.insert(LifeGoal("Going skydiving", isAchieved: true))
-        container.mainContext.insert(LifeGoal("Plant one tree", isAchieved: false))
-        container.mainContext.insert(LifeGoal("Run a marathon", isAchieved: false))
+        container.mainContext.insert(LifeGoal("Going skydiving", aspect: .me, isAchieved: true))
+        container.mainContext.insert(LifeGoal("Plant one tree", aspect: .society, isAchieved: false))
+        container.mainContext.insert(LifeGoal("Run a marathon", aspect: .me, isAchieved: false))
         
         return container
-    } catch {
-        fatalError("Failed to create container")
+    } catch let error {
+        fatalError("Failed to create container \(error.localizedDescription)")
     }
     
 }()

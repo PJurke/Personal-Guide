@@ -12,84 +12,56 @@ struct LifeGoalOverview: View {
     
     @Environment(\.modelContext) private var modelContext
     
-    @State private var addSheetVisible = false
-    
     @Query private var lifeGoals: [LifeGoal]
-    
-    @State private var selectedGoal: LifeGoal = LifeGoal()
-    @State private var isGoalSelected = false
+    @State private var isSheetVisible: Bool = false
+    @State private var selectedGoal: LifeGoal?
     
     // Functions
     
-    private func addLifeGoalOnAdd(newGoal: LifeGoal) {
-        
-        addSheetVisible = false
-        
-        if newGoal.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            newGoal.name = String(localized: "LifeGoals.Properties.Name.NewDefault")
-        }
-        
-        modelContext.insert(newGoal)
-        
-    }
-    
-    private func editLifeGoalViewOnDone(editedGoal: LifeGoal) {
-        isGoalSelected = false
-        
-        if editedGoal.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            editedGoal.name = String(localized:"LifeGoals.Properties.Name.EditDefault")
-        }
-    }
-    
-    private func showAddSheet() {
-        self.addSheetVisible = true
+    private func showNewLifeGoalSheet() {
+        selectedGoal = nil
+        isSheetVisible = true
     }
     
     // Body
     
     var body: some View {
-        
         NavigationStack {
-            
             VStack {
-                
                 if lifeGoals.isEmpty {
-                    NoLifeGoalsView(action: showAddSheet)
+                    NoLifeGoalsView(action: showNewLifeGoalSheet)
                 } else {
-                    SearchableLifeGoalList(
-                        lifeGoals: lifeGoals,
-                        selectedGoal: $selectedGoal,
-                        isGoalSelected: $isGoalSelected
-                    )
-                    .sheet(isPresented: $isGoalSelected) {
-                        LifeGoalDetailView(
-                            lifeGoal: $selectedGoal,
-                            mode: .edit,
-                            onComplete: editLifeGoalViewOnDone
-                        )
-                        .interactiveDismissDisabled()
-                    }
+                    lifeGoalList
                 }
             }
             .navigationTitle("LifeGoals.Label")
             .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    NavigationBarButton(
-                        action: showAddSheet,
-                        systemImage: "plus"
-                    )
-                }
+                addLifeGoalButton
             }
-            .sheet(isPresented: $addSheetVisible) {
-                LifeGoalDetailView(
-                    lifeGoal: .constant(LifeGoal()),
-                    mode: .add,
-                    onComplete: addLifeGoalOnAdd
-                )
+            .sheet(isPresented: $isSheetVisible) {
+                LifeGoalDetailView(lifeGoal: selectedGoal)
             }
             
         }
         
+    }
+    
+    // Computed Properties
+    
+    private var addLifeGoalButton: some ToolbarContent {
+        ToolbarItem(placement: .primaryAction) {
+            Button(action: showNewLifeGoalSheet) {
+                Image(systemName: "plus")
+            }
+        }
+    }
+    
+    private var lifeGoalList: some View {
+        SearchableLifeGoalList(
+            lifeGoals: lifeGoals,
+            selectedGoal: $selectedGoal,
+            isGoalSelected: $isSheetVisible
+        )
     }
     
 }

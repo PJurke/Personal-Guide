@@ -26,4 +26,19 @@ import SwiftUI
         self.name = name
     }
     
+    // Functions
+    
+    // Returns a random life goal example
+    static func getRandomExample() -> LocalizedStringKey {
+        let examples : [LocalizedStringKey] = [
+            "LifeGoals.Example.Marathon",
+            "LifeGoals.Example.Skydiving",
+            "LifeGoals.Example.TeamLeading",
+            "LifeGoals.Example.Tree",
+            "LifeGoals.Example.WorldTour"
+        ]
+        
+        return examples.randomElement()!
+    }
+    
 }
