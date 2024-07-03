@@ -15,7 +15,6 @@ struct LifeGoalList: View {
     
     var lifeGoals: [LifeGoal]
     @Binding var selectedGoal: LifeGoal?
-    @Binding var isGoalSelected: Bool
     
     // Body
     
@@ -44,7 +43,6 @@ struct LifeGoalList: View {
     
     private func handleTapGesture(for goal: LifeGoal) {
         selectedGoal = goal
-        isGoalSelected = true
     }
     
     private func removeLifeGoal(at offsets: IndexSet) {
@@ -69,7 +67,7 @@ struct LifeGoalList: View {
     @State var firstGoal: LifeGoal? = goals.first
     @State var isGoalSelected = false
     
-    return LifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)
+    return LifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal)
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "en"))
 }
@@ -79,7 +77,7 @@ struct LifeGoalList: View {
     @State var firstGoal: LifeGoal? = goals.first
     @State var isGoalSelected = false
     
-    return LifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal, isGoalSelected: $isGoalSelected)
+    return LifeGoalList(lifeGoals: goals, selectedGoal: $firstGoal)
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "de"))
 }
