@@ -10,13 +10,13 @@ import SwiftUI
 
 struct LifeGoalOverview: View {
     
-    @Environment(\.isSearching) private var isSearching: Bool
     @Environment(\.modelContext) private var modelContext: ModelContext
     
     @Query private var lifeGoals: [LifeGoal]
-    @State private var sheetMode: LifeGoalDetailMode = .create
-    @State private var selectedGoal: LifeGoal?
+    @State private var isSearching: Bool = false
     @State private var searchText: String = ""
+    @State private var selectedGoal: LifeGoal?
+    @State private var sheetMode: LifeGoalDetailMode = .create
     
     // Body
     
@@ -40,11 +40,11 @@ struct LifeGoalOverview: View {
                                 }
                         }
                     }
-                    .searchable(text: $searchText, prompt: "LifeGoals.Search.Label")
+                    .searchable(text: $searchText, isPresented: $isSearching, prompt: "LifeGoals.Search.Label")
                 }
             }
             .overlay {
-                if isSearching && lifeGoals.isEmpty {
+                if isLifeGoalSearchResult {
                     NoLifeGoalSearchResult(action: {})
                 }
             }
@@ -70,13 +70,16 @@ struct LifeGoalOverview: View {
         }
     }
     
-    var filteredLifeGoals: [LifeGoal] {
+    private var filteredLifeGoals: [LifeGoal] {
         guard !searchText.isEmpty else { return lifeGoals }
         
         return lifeGoals.filter { goal in
             goal.name.lowercased().contains(searchText.lowercased())
-            
         }
+    }
+    
+    private var isLifeGoalSearchResult: Bool {
+        isSearching && filteredLifeGoals.isEmpty
     }
     
     // Functions
