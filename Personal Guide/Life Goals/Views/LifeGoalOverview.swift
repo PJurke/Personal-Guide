@@ -35,8 +35,10 @@ struct LifeGoalOverview: View {
                                 .swipeActions(edge: .leading) {
                                     toggleAchievementButton(for: goal)
                                 }
+                                .swipeActions(edge: .trailing) {
+                                    removeGoalButton(goal: goal)
+                                }
                         }
-                        .onDelete(perform: removeLifeGoal)
                     }
                     .searchable(text: $searchText, prompt: "LifeGoals.Search.Label")
                 }
@@ -84,12 +86,6 @@ struct LifeGoalOverview: View {
         selectedGoal = goal
     }
     
-    private func removeLifeGoal(at offsets: IndexSet) {
-        for index in offsets {
-            modelContext.delete(lifeGoals[index])
-        }
-    }
-    
     private func showNewLifeGoalSheet() {
         sheetMode = .create
         selectedGoal = LifeGoal()
@@ -99,9 +95,18 @@ struct LifeGoalOverview: View {
         Button {
             goal.isAchieved.toggle()
         } label: {
-            Label("Achieve", systemImage: "checkmark.circle")
+            Image(systemName: "checkmark.circle")
         }
         .tint(.green)
+    }
+    
+    private func removeGoalButton(goal: LifeGoal) -> some View {
+        Button {
+            modelContext.delete(goal)
+        } label: {
+            Image(systemName: "trash")
+        }
+        .tint(.red)
     }
     
 }
