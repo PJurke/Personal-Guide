@@ -27,7 +27,7 @@ struct LifeGoalOverview: View {
                     NoLifeGoalsView(action: showNewLifeGoalSheet)
                 } else {
                     List {
-                        ForEach(lifeGoals) { goal in
+                        ForEach(filteredLifeGoals) { goal in
                             LifeGoalRow(lifeGoal: goal)
                                 .onTapGesture {
                                     handleTapGesture(for: goal)
