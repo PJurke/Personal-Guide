@@ -22,7 +22,7 @@ struct NoLifeGoalsView: View {
                 Text("LifeGoals.None.Action")
             }
         })
-        
+        .background(.background.secondary)
     }
     
 }
