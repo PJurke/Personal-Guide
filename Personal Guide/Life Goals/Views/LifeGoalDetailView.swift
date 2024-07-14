@@ -18,7 +18,7 @@ struct LifeGoalDetailView: View {
     @Environment(\.modelContext) private var modelContext
     
     @State var lifeGoal: LifeGoal? = nil
-    var sheetMode: LifeGoalDetailMode
+    @Binding var sheetMode: LifeGoalDetailMode
     
     @State private var lifeGoalExample: LocalizedStringKey = ""
     @State private var isAchieved: Bool = false
@@ -111,13 +111,13 @@ struct LifeGoalDetailView: View {
 }
 
 #Preview("LifeGoalDetailView (create, EN)") {
-    LifeGoalDetailView(sheetMode: .create)
+    LifeGoalDetailView(sheetMode: .constant(.create))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "en"))
 }
 
 #Preview("LifeGoalDetailView (create, DE)") {
-    LifeGoalDetailView(sheetMode: .create)
+    LifeGoalDetailView(sheetMode: .constant(.create))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "de"))
 }
@@ -125,7 +125,7 @@ struct LifeGoalDetailView: View {
 #Preview("LifeGoalDetailView (edit, EN)") {
     let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
     
-    return LifeGoalDetailView(lifeGoal: goal, sheetMode: .edit)
+    return LifeGoalDetailView(lifeGoal: goal, sheetMode: .constant(.edit))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "en"))
 }
@@ -133,7 +133,7 @@ struct LifeGoalDetailView: View {
 #Preview("LifeGoalDetailView (edit, DE)") {
     let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
     
-    return LifeGoalDetailView(lifeGoal: goal, sheetMode: .edit)
+    return LifeGoalDetailView(lifeGoal: goal, sheetMode: .constant(.edit))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "de"))
 }

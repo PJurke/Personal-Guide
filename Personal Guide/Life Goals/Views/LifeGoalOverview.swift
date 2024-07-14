@@ -53,7 +53,7 @@ struct LifeGoalOverview: View {
                 addLifeGoalButton
             }
             .sheet(item: $selectedGoal) { goal in
-                LifeGoalDetailView(lifeGoal: goal, sheetMode: sheetMode)
+                LifeGoalDetailView(lifeGoal: goal, sheetMode: $sheetMode)
             }
             
         }
