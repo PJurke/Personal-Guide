@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-private enum LifeGoalDetailMode {
+enum LifeGoalDetailMode {
     case create, edit
 }
 
@@ -18,6 +18,7 @@ struct LifeGoalDetailView: View {
     @Environment(\.modelContext) private var modelContext
     
     @State var lifeGoal: LifeGoal? = nil
+    @Binding var sheetMode: LifeGoalDetailMode
     
     @State private var lifeGoalExample: LocalizedStringKey = ""
     @State private var isAchieved: Bool = false
@@ -26,16 +27,16 @@ struct LifeGoalDetailView: View {
     
     // Computed Properties
     
-    private var sheetMode: LifeGoalDetailMode {
-        lifeGoal == nil ? .create : .edit
-    }
-    
     private var navigationTitle: LocalizedStringKey {
         sheetMode == .create ? LocalizedStringKey("LifeGoals.New") : LocalizedStringKey("LifeGoals.Edit")
     }
     
     private var confirmationLabel: LocalizedStringKey {
         sheetMode == .create ? LocalizedStringKey("LifeGoals.Operations.Add") : LocalizedStringKey("LifeGoals.Operations.Save")
+    }
+    
+    private var isDismissalDisabled: Bool {
+        sheetMode == .edit
     }
     
     // Body
@@ -82,7 +83,7 @@ struct LifeGoalDetailView: View {
                 }
                 lifeGoalExample = LifeGoal.getRandomExample()
             }
-            .interactiveDismissDisabled(sheetMode == .edit)
+            .interactiveDismissDisabled(isDismissalDisabled)
         }
     }
     
@@ -93,30 +94,30 @@ struct LifeGoalDetailView: View {
         // Check if name is empty. If yes, set default value
         let goalName = name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? String(localized:  "LifeGoals.Properties.Name.NewDefault") : name
         
-        if let lifeGoal {
-            lifeGoal.aspect = lifeAspect
-            lifeGoal.isAchieved = isAchieved
-            lifeGoal.name = goalName
-        } else {
+        if sheetMode == .create {
             let newGoal = LifeGoal(
                 goalName,
                 aspect: lifeAspect,
                 isAchieved: isAchieved
             )
             modelContext.insert(newGoal)
+        } else if (sheetMode == .edit) { // The life goal variable will always be not nil when being called (new -> empty, edit -> selected)
+            lifeGoal!.aspect = lifeAspect
+            lifeGoal!.isAchieved = isAchieved
+            lifeGoal!.name = goalName
         }
     }
     
 }
 
-#Preview("LifeGoalDetailView (add, EN)") {
-    LifeGoalDetailView()
+#Preview("LifeGoalDetailView (create, EN)") {
+    LifeGoalDetailView(sheetMode: .constant(.create))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "en"))
 }
 
-#Preview("LifeGoalDetailView (add, DE)") {
-    LifeGoalDetailView()
+#Preview("LifeGoalDetailView (create, DE)") {
+    LifeGoalDetailView(sheetMode: .constant(.create))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "de"))
 }
@@ -124,7 +125,7 @@ struct LifeGoalDetailView: View {
 #Preview("LifeGoalDetailView (edit, EN)") {
     let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
     
-    return LifeGoalDetailView(lifeGoal: goal)
+    return LifeGoalDetailView(lifeGoal: goal, sheetMode: .constant(.edit))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "en"))
 }
@@ -132,7 +133,7 @@ struct LifeGoalDetailView: View {
 #Preview("LifeGoalDetailView (edit, DE)") {
     let goal = try! previewContainer.mainContext.fetch(FetchDescriptor<LifeGoal>()).first!
     
-    return LifeGoalDetailView(lifeGoal: goal)
+    return LifeGoalDetailView(lifeGoal: goal, sheetMode: .constant(.edit))
         .modelContainer(previewContainer)
         .environment(\.locale, .init(identifier: "de"))
 }

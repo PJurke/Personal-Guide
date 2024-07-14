@@ -10,18 +10,13 @@ import SwiftUI
 
 struct LifeGoalOverview: View {
     
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.modelContext) private var modelContext: ModelContext
     
     @Query private var lifeGoals: [LifeGoal]
-    @State private var isSheetVisible: Bool = false
+    @State private var isSearching: Bool = false
+    @State private var searchText: String = ""
     @State private var selectedGoal: LifeGoal?
-    
-    // Functions
-    
-    private func showNewLifeGoalSheet() {
-        selectedGoal = nil
-        isSheetVisible = true
-    }
+    @State private var sheetMode: LifeGoalDetailMode = .create
     
     // Body
     
@@ -31,15 +26,34 @@ struct LifeGoalOverview: View {
                 if lifeGoals.isEmpty {
                     NoLifeGoalsView(action: showNewLifeGoalSheet)
                 } else {
-                    lifeGoalList
+                    List {
+                        ForEach(filteredLifeGoals) { goal in
+                            LifeGoalRow(lifeGoal: goal)
+                                .onTapGesture {
+                                    handleTapGesture(for: goal)
+                                }
+                                .swipeActions(edge: .leading) {
+                                    toggleAchievementButton(for: goal)
+                                }
+                                .swipeActions(edge: .trailing) {
+                                    removeGoalButton(goal: goal)
+                                }
+                        }
+                    }
+                    .searchable(text: $searchText, isPresented: $isSearching, prompt: "LifeGoals.Search.Label")
+                }
+            }
+            .overlay {
+                if isLifeGoalSearchResult {
+                    NoLifeGoalSearchResult(action: {})
                 }
             }
             .navigationTitle("LifeGoals.Label")
             .toolbar {
                 addLifeGoalButton
             }
-            .sheet(isPresented: $isSheetVisible) {
-                LifeGoalDetailView(lifeGoal: selectedGoal)
+            .sheet(item: $selectedGoal) { goal in
+                LifeGoalDetailView(lifeGoal: goal, sheetMode: $sheetMode)
             }
             
         }
@@ -56,12 +70,46 @@ struct LifeGoalOverview: View {
         }
     }
     
-    private var lifeGoalList: some View {
-        SearchableLifeGoalList(
-            lifeGoals: lifeGoals,
-            selectedGoal: $selectedGoal,
-            isGoalSelected: $isSheetVisible
-        )
+    private var filteredLifeGoals: [LifeGoal] {
+        guard !searchText.isEmpty else { return lifeGoals }
+        
+        return lifeGoals.filter { goal in
+            goal.name.lowercased().contains(searchText.lowercased())
+        }
+    }
+    
+    private var isLifeGoalSearchResult: Bool {
+        isSearching && filteredLifeGoals.isEmpty
+    }
+    
+    // Functions
+    
+    private func handleTapGesture(for goal: LifeGoal) {
+        sheetMode = .edit
+        selectedGoal = goal
+    }
+    
+    private func showNewLifeGoalSheet() {
+        sheetMode = .create
+        selectedGoal = LifeGoal()
+    }
+    
+    private func toggleAchievementButton(for goal: LifeGoal) -> some View {
+        Button {
+            goal.isAchieved.toggle()
+        } label: {
+            Image(systemName: "checkmark.circle")
+        }
+        .tint(.green)
+    }
+    
+    private func removeGoalButton(goal: LifeGoal) -> some View {
+        Button {
+            modelContext.delete(goal)
+        } label: {
+            Image(systemName: "trash")
+        }
+        .tint(.red)
     }
     
 }

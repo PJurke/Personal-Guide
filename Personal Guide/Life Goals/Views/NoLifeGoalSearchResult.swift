@@ -18,6 +18,7 @@ struct NoLifeGoalSearchResult: View {
         }, description: {
             Text("LifeGoals.Search.None.Description")
         })
+        .background(.background.secondary)
         
     }
     

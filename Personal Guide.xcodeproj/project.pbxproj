@@ -14,7 +14,6 @@
 		7620FDA02BD80C1200F4816C /* ExportDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */; };
 		7620FDA22BD813B100F4816C /* DataSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FDA12BD813B100F4816C /* DataSection.swift */; };
 		765D93882B77DA6200C00708 /* NoLifeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */; };
-		765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */; };
 		767A939B2C2D78E80081C7F1 /* DataRemovalSuccessful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A939A2C2D78E80081C7F1 /* DataRemovalSuccessful.swift */; };
 		767A939D2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A939C2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift */; };
 		767A93A02C2DF22E0081C7F1 /* DataRemovalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A939F2C2DF22E0081C7F1 /* DataRemovalError.swift */; };
@@ -45,7 +44,6 @@
 		D4CE12AA2B49FF8B00A7172B /* NoLifeGoalSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */; };
 		D4CE12AC2B4A092B00A7172B /* LifeGoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */; };
 		D4CE12AE2B4A09BC00A7172B /* LifeGoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */; };
-		D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */; };
 		D4CE12B22B4A0EC400A7172B /* LifeGoalOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +72,6 @@
 		7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDataRow.swift; sourceTree = "<group>"; };
 		7620FDA12BD813B100F4816C /* DataSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSection.swift; sourceTree = "<group>"; };
 		765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalsView.swift; sourceTree = "<group>"; };
-		765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableLifeGoalList.swift; sourceTree = "<group>"; };
 		767A939A2C2D78E80081C7F1 /* DataRemovalSuccessful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRemovalSuccessful.swift; sourceTree = "<group>"; };
 		767A939C2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRemovalConfirmation.swift; sourceTree = "<group>"; };
 		767A939F2C2DF22E0081C7F1 /* DataRemovalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRemovalError.swift; sourceTree = "<group>"; };
@@ -110,7 +107,6 @@
 		D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLifeGoalSearchResult.swift; sourceTree = "<group>"; };
 		D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalRow.swift; sourceTree = "<group>"; };
 		D4CE12AD2B4A09BC00A7172B /* LifeGoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalDetailView.swift; sourceTree = "<group>"; };
-		D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalList.swift; sourceTree = "<group>"; };
 		D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalOverview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -323,8 +319,6 @@
 			isa = PBXGroup;
 			children = (
 				D4CE12B12B4A0EC400A7172B /* LifeGoalOverview.swift */,
-				765D93892B77E03400C00708 /* SearchableLifeGoalList.swift */,
-				D4CE12AF2B4A0D2400A7172B /* LifeGoalList.swift */,
 				D4CE12AB2B4A092B00A7172B /* LifeGoalRow.swift */,
 				D4CE12A92B49FF8B00A7172B /* NoLifeGoalSearchResult.swift */,
 				765D93872B77DA6200C00708 /* NoLifeGoalsView.swift */,
@@ -502,8 +496,6 @@
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
 				7680BBFF2BE967FC00FC8EFD /* LifeGoal.swift in Sources */,
-				765D938A2B77E03400C00708 /* SearchableLifeGoalList.swift in Sources */,
-				D4CE12B02B4A0D2400A7172B /* LifeGoalList.swift in Sources */,
 				768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */,
 				D4CE12AA2B49FF8B00A7172B /* NoLifeGoalSearchResult.swift in Sources */,
 				D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */,
