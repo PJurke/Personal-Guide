@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ExportDataRow: View {
     
-    @Query private let goals: [LifeGoal]
+    @Query private var goals: [LifeGoal]
     @State private var isShowingExporter = false
     @State private var didEncounterError = false
     
@@ -23,6 +23,7 @@ struct ExportDataRow: View {
             Button("App.Export.Action") {
                 isShowingExporter = true
             }
+            .foregroundStyle(.primary)
             .fileExporter(
                 isPresented: $isShowingExporter,
                 document: generateCSVDocument(),

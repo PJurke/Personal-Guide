@@ -33,7 +33,7 @@ struct SettingsRow<Content: View>: View {
             }
             
             content
-                .foregroundStyle(.primary)
+                //.foregroundStyle(.primary)
             
         }
         

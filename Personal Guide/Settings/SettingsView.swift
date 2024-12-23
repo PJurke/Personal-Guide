@@ -17,6 +17,7 @@ struct SettingsView: View {
                 DataSection()
                 DocumentationLink()
                 ShareAppRow()
+                CreatedBySection()
             }
             .navigationTitle("Settings.Label")
         }

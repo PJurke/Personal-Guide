@@ -30,6 +30,7 @@
 		768F38102B6EEA1E005F267C /* AppColorSchemeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */; };
 		76AD79B62BD97489001446DC /* CSVDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AD79B52BD97489001446DC /* CSVDocument.swift */; };
 		76B1C1CB2B9CFF7D005939B0 /* ShareAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */; };
+		76C59C7A2CD95F0D00667443 /* CreatedBySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C59C792CD95F0D00667443 /* CreatedBySection.swift */; };
 		76DA2BEA2BE01678003CAFAB /* RemoveAllDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA2BE92BE01678003CAFAB /* RemoveAllDataRow.swift */; };
 		D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */; };
 		D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12712B49EFE900A7172B /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		768F380F2B6EEA1E005F267C /* AppColorSchemeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSchemeSection.swift; sourceTree = "<group>"; };
 		76AD79B52BD97489001446DC /* CSVDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDocument.swift; sourceTree = "<group>"; };
 		76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAppRow.swift; sourceTree = "<group>"; };
+		76C59C792CD95F0D00667443 /* CreatedBySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedBySection.swift; sourceTree = "<group>"; };
 		76DA2BE92BE01678003CAFAB /* RemoveAllDataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAllDataRow.swift; sourceTree = "<group>"; };
 		D4CE12682B49EFE800A7172B /* Personal Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGuideApp.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				768F38032B6EDBC2005F267C /* SettingsView.swift */,
 				760DD41F2C07A06F00278F34 /* SettingsRow.swift */,
 				768F380A2B6EE728005F267C /* ColorScheme */,
+				76C59C772CD95ECC00667443 /* CreatedBy */,
 				768F38062B6EE18B005F267C /* Documentation */,
 				7620FD9E2BD80BE400F4816C /* Data */,
 				76B1C1C92B9CFF5E005939B0 /* Sharing */,
@@ -221,6 +224,14 @@
 				76B1C1CA2B9CFF7D005939B0 /* ShareAppRow.swift */,
 			);
 			path = Sharing;
+			sourceTree = "<group>";
+		};
+		76C59C772CD95ECC00667443 /* CreatedBy */ = {
+			isa = PBXGroup;
+			children = (
+				76C59C792CD95F0D00667443 /* CreatedBySection.swift */,
+			);
+			path = CreatedBy;
 			sourceTree = "<group>";
 		};
 		D4CE125F2B49EFE800A7172B = {
@@ -494,6 +505,7 @@
 				760DD4202C07A06F00278F34 /* SettingsRow.swift in Sources */,
 				767A939D2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift in Sources */,
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
+				76C59C7A2CD95F0D00667443 /* CreatedBySection.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
 				7680BBFF2BE967FC00FC8EFD /* LifeGoal.swift in Sources */,
 				768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */,
