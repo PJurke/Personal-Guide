@@ -10,7 +10,7 @@ import SwiftUI
 
 /// Creates a model container for the application.
 ///
-/// - Returns: An optional ModelContainer if successful.
+/// - Returns: A ModelContainer if successful.
 /// 
 /// ### Side Effects:
 /// - On success, a new or existing database file is opened or created.
