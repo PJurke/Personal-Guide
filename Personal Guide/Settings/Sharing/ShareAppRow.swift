@@ -21,6 +21,7 @@ struct ShareAppRow: View {
                     Text("App.Share")
                     
             }
+            .foregroundStyle(.primary)
             
         }
         

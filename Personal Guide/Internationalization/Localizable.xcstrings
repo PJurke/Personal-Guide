@@ -791,6 +791,9 @@
         }
       }
     },
+    "Philip Jurke" : {
+
+    },
     "Settings.ColorScheme.Dark" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -870,6 +873,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "System"
+          }
+        }
+      }
+    },
+    "Settings.DevelopedBy" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entwickelt durch"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developed by"
           }
         }
       }

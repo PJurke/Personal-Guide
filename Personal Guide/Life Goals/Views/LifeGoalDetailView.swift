@@ -63,10 +63,8 @@ struct LifeGoalDetailView: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(confirmationLabel) {
-                        withAnimation {
-                            save()
-                            dismiss()
-                        }
+                        save()
+                        dismiss()
                     }
                 }
                 ToolbarItem(placement: .cancellationAction) {

@@ -19,9 +19,11 @@ struct AppVersionRow: View {
                 
                 LabeledContent("Settings.Versioning.Version.Label") {
                     Text("\(getAppVersion())")
+                        .foregroundStyle(.secondary)
                 }
                 
             }
+            .foregroundStyle(.primary)
             
         }
         
@@ -30,10 +32,13 @@ struct AppVersionRow: View {
     // Func
     
     func getAppVersion() -> String {
-        if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
+        
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             return version
         }
+        
         return "Settings.Versioning.Version.Unavailable"
+        
     }
     
 }
