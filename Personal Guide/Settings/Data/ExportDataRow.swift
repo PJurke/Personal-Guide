@@ -28,7 +28,7 @@ struct ExportDataRow: View {
                 isPresented: $isShowingExporter,
                 document: generateCSVDocument(),
                 contentType: .commaSeparatedText,
-                defaultFilename: "Life Goals",
+                defaultFilename: AppConstants.defaultExportFilename,
                 onCompletion: handleExportResult
             )
             .alert("App.Export.Failed.Title", isPresented: $didEncounterError) {

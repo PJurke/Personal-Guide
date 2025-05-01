@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7607E7F32B55C16F004EBEDB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */; };
 		760DD4202C07A06F00278F34 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD41F2C07A06F00278F34 /* SettingsRow.swift */; };
+		760F5DFD2DC3E8E0009DDDC5 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760F5DFC2DC3E8DB009DDDC5 /* AppConstants.swift */; };
 		76117EA72BE7FB6A00FCD2CC /* AutoFocusedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */; };
 		7620FD9D2BD56FC500F4816C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9C2BD56FC500F4816C /* MainView.swift */; };
 		7620FDA02BD80C1200F4816C /* ExportDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		7607E7F22B55C16F004EBEDB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		760DD41F2C07A06F00278F34 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
+		760F5DFC2DC3E8DB009DDDC5 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusedModifier.swift; sourceTree = "<group>"; };
 		7620FD9C2BD56FC500F4816C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7620FD9F2BD80C1200F4816C /* ExportDataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDataRow.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 		D4CE12B52B4DD51B00A7172B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				760F5DFC2DC3E8DB009DDDC5 /* AppConstants.swift */,
 				76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */,
 				76AD79B52BD97489001446DC /* CSVDocument.swift */,
 			);
@@ -505,6 +508,7 @@
 				760DD4202C07A06F00278F34 /* SettingsRow.swift in Sources */,
 				767A939D2C2DEBE00081C7F1 /* DataRemovalConfirmation.swift in Sources */,
 				768F38092B6EE1A7005F267C /* DocumentationLink.swift in Sources */,
+				760F5DFD2DC3E8E0009DDDC5 /* AppConstants.swift in Sources */,
 				76C59C7A2CD95F0D00667443 /* CreatedBySection.swift in Sources */,
 				D4CE12A32B49F8E400A7172B /* PreviewContainer.swift in Sources */,
 				7680BBFF2BE967FC00FC8EFD /* LifeGoal.swift in Sources */,

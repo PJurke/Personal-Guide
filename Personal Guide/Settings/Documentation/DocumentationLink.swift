@@ -12,7 +12,7 @@ struct DocumentationLink: View {
     var body: some View {
         
         SettingsRow(iconName: "doc.text.fill", color: .brown) {
-            Link("Documentation.Operations.Open", destination: URL(string: "https://personal-guide.notion.site/Personal-Guide-b22292b824ac4362848d63505e31a3ac")!)
+            Link("Documentation.Operations.Open", destination: AppConstants.documentationURL)
                 .foregroundStyle(.primary)
         }
         

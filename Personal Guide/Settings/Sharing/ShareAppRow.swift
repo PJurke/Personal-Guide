@@ -14,7 +14,7 @@ struct ShareAppRow: View {
         SettingsRow(iconName: "square.and.arrow.up.fill", color: .orange) {
             
             ShareLink(
-                item: URL(string: "https://apps.apple.com/de/app/personal-guide/id6475791627")!,
+                item: AppConstants.appStoreURL,
                 subject: Text("App.Share.Subject"),
                 message: Text("App.Share.Message")) {
                     
