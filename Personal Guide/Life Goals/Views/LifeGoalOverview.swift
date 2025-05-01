@@ -40,6 +40,8 @@ struct LifeGoalOverview: View {
                                 }
                         }
                     }
+                    .listStyle(.plain)
+                    .background(Color(.systemGroupedBackground))
                     .searchable(text: $searchText, isPresented: $isSearching, prompt: "LifeGoals.Search.Label")
                 }
             }
