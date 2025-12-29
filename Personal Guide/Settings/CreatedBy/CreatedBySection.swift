@@ -13,12 +13,15 @@ struct CreatedBySection: View {
         
         Section {
             
-            SettingsRow(iconName: "pencil", color: .orange)
-            {
-                LabeledContent("Settings.DevelopedBy") {
-                    Text("Philip Jurke")
+            Link(destination: URL(string: "https://philipjurke.de")!) {
+                SettingsRow(iconName: "pencil", color: .orange)
+                {
+                    LabeledContent("Settings.DevelopedBy") {
+                        Text("Philip Jurke")
+                    }
                 }
             }
+            .foregroundStyle(.primary)
             
         }
         
