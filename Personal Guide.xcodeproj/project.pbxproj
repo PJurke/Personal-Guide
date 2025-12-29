@@ -39,6 +39,7 @@
 		764B41B62F02BF5B001AD651 /* CreatedBySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B41912F02BF5B001AD651 /* CreatedBySection.swift */; };
 		768DDE0F2BD3053300304665 /* LifeAspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0C2BD3053300304665 /* LifeAspect.swift */; };
 		768DDE102BD3053300304665 /* LifeAspectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE0D2BD3053300304665 /* LifeAspectPicker.swift */; };
+		7693D2B92F02D76E00561203 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D2B82F02D76E00561203 /* ConfettiView.swift */; };
 		76AD79B62BD97489001446DC /* CSVDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AD79B52BD97489001446DC /* CSVDocument.swift */; };
 		D4CE126C2B49EFE800A7172B /* PersonalGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */; };
 		D4CE12722B49EFE900A7172B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CE12712B49EFE900A7172B /* Assets.xcassets */; };
@@ -102,6 +103,7 @@
 		764B41A42F02BF5B001AD651 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		768DDE0C2BD3053300304665 /* LifeAspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspect.swift; sourceTree = "<group>"; };
 		768DDE0D2BD3053300304665 /* LifeAspectPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeAspectPicker.swift; sourceTree = "<group>"; };
+		7693D2B82F02D76E00561203 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		76AD79B52BD97489001446DC /* CSVDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDocument.swift; sourceTree = "<group>"; };
 		D4CE12682B49EFE800A7172B /* Personal Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE126B2B49EFE800A7172B /* PersonalGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGuideApp.swift; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 			children = (
 				760F5DFC2DC3E8DB009DDDC5 /* AppConstants.swift */,
 				76117EA62BE7FB6A00FCD2CC /* AutoFocusedModifier.swift */,
+				7693D2B82F02D76E00561203 /* ConfettiView.swift */,
 				76AD79B52BD97489001446DC /* CSVDocument.swift */,
 			);
 			path = Common;
@@ -531,6 +534,7 @@
 				764B41AD2F02BF5B001AD651 /* ExportDataRow.swift in Sources */,
 				764B41AE2F02BF5B001AD651 /* AppBuildRow.swift in Sources */,
 				764B41AF2F02BF5B001AD651 /* DocumentationLink.swift in Sources */,
+				7693D2B92F02D76E00561203 /* ConfettiView.swift in Sources */,
 				764B41B02F02BF5B001AD651 /* RemoveAllDataRow.swift in Sources */,
 				764B41B12F02BF5B001AD651 /* AppVersionRow.swift in Sources */,
 				764B41B22F02BF5B001AD651 /* DataRemovalConfirmation.swift in Sources */,
@@ -735,7 +739,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.personal-leadership.Personal-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -780,7 +784,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.personal-leadership.Personal-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

@@ -24,6 +24,7 @@ struct LifeGoalDetailView: View {
     @State private var isAchieved: Bool = false
     @State private var lifeAspect: LifeAspect = LifeAspect.general
     @State private var name: String = ""
+    @State private var confettiCounter: Int = 0
     
     // Computed Properties
     
@@ -82,6 +83,15 @@ struct LifeGoalDetailView: View {
                 lifeGoalExample = LifeGoal.getRandomExample()
             }
             .interactiveDismissDisabled(isDismissalDisabled)
+            .overlay {
+                ConfettiView(counter: $confettiCounter)
+                    .allowsHitTesting(false)
+            }
+            .onChange(of: isAchieved) { oldValue, newValue in
+                if newValue {
+                    confettiCounter += 1
+                }
+            }
         }
     }
     
