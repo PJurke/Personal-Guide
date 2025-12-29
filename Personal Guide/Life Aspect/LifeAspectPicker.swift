@@ -14,7 +14,12 @@ struct LifeAspectPicker: View {
     var body: some View {
     
         Picker("Aspect", selection: $selection) {
-            ForEach(LifeAspect.allCases, id: \.self) { aspect in
+            Text(LifeAspect.general.localized)
+                .tag(LifeAspect.general)
+            
+            Divider()
+            
+            ForEach(LifeAspect.allCases.filter { $0 != .general }, id: \.self) { aspect in
                 Text(aspect.localized)
                     .fixedSize()
                     .tag(aspect)
