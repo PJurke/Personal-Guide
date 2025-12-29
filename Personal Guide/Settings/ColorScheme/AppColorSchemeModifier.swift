@@ -20,7 +20,7 @@ struct AppColorSchemeModifier: ViewModifier {
         case .light:
             return content.preferredColorScheme(.light)
         default:
-            return content.preferredColorScheme(ColorScheme(.unspecified))
+            return content.preferredColorScheme(nil)
         }
         
     }
