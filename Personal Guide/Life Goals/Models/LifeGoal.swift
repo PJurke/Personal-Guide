@@ -12,14 +12,14 @@ import SwiftUI
     
     // Properties
     
-    var aspect: LifeAspect = LifeAspect.unknown
+    var aspect: LifeAspect = LifeAspect.general
     var isAchieved: Bool = false
     var name: String = String(localized: "LifeGoal.Label")
     var id: UUID = UUID()
     
     // Initializer
     
-    init(_ name: String = String(localized: "LifeGoals.Properties.Name.Default"), aspect: LifeAspect = .unknown, isAchieved: Bool = false) {
+    init(_ name: String = String(localized: "LifeGoals.Properties.Name.Default"), aspect: LifeAspect = .general, isAchieved: Bool = false) {
         self.aspect = aspect
         self.id = UUID()
         self.isAchieved = isAchieved

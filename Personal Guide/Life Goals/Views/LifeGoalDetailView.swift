@@ -22,7 +22,7 @@ struct LifeGoalDetailView: View {
     
     @State private var lifeGoalExample: LocalizedStringKey = ""
     @State private var isAchieved: Bool = false
-    @State private var lifeAspect: LifeAspect = LifeAspect.unknown
+    @State private var lifeAspect: LifeAspect = LifeAspect.general
     @State private var name: String = ""
     
     // Computed Properties

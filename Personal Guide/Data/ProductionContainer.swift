@@ -18,9 +18,9 @@ import SwiftUI
 func createProductionContainer() throws -> ModelContainer {
     
     // Create schema based on existing data models
-    let schema = Schema([
-        LifeGoal.self
-    ])
+    let schema = Schema(
+        versionedSchema: PersonalGuideSchemaV2.self
+    )
     
     // Set up model configuration which includes the underlying schema and additional settings
     let modelConfiguration = ModelConfiguration(
@@ -31,8 +31,8 @@ func createProductionContainer() throws -> ModelContainer {
     // Try to find or create the container, including scheme, migration plans and the configurations
     return try ModelContainer(
         for: schema,
+        migrationPlan: PersonalGuideMigrationPlan.self,
         configurations: [modelConfiguration]
     )
     
 }
-
