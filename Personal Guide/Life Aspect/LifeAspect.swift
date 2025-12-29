@@ -8,17 +8,20 @@
 import Foundation
 import SwiftUI
 
-enum LifeAspect: String, CaseIterable, Codable {
+enum LifeAspect: String, CaseIterable, Codable, Identifiable {
+    case general = "LifeAspect.General"
     case me = "LifeAspect.Me"
     case family = "LifeAspect.Family"
     case friends = "LifeAspect.Friends"
     case work = "LifeAspect.Work"
     case society = "LifeAspect.Society"
-    case general = "LifeAspect.General"
+
     
     var localized: LocalizedStringKey {
         LocalizedStringKey(rawValue)
     }
+    
+    var id: Self { self }
     
     // Custom decoding to handle legacy "Unknown" case
     init(from decoder: Decoder) throws {

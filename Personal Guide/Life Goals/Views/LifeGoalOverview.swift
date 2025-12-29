@@ -15,6 +15,7 @@ struct LifeGoalOverview: View {
     @Query private var lifeGoals: [LifeGoal]
     @State private var isSearching: Bool = false
     @State private var searchText: String = ""
+    @State private var selectedTokens: [LifeAspect] = []
     @State private var selectedGoal: LifeGoal?
     @State private var sheetMode: LifeGoalDetailMode = .create
     
@@ -42,7 +43,10 @@ struct LifeGoalOverview: View {
                     }
                     .listStyle(.plain)
                     .background(Color(.systemGroupedBackground))
-                    .searchable(text: $searchText, isPresented: $isSearching, prompt: "LifeGoals.Search.Label")
+                    .background(Color(.systemGroupedBackground))
+                    .searchable(text: $searchText, tokens: $selectedTokens, suggestedTokens: .constant(LifeAspect.allCases), isPresented: $isSearching, prompt: "LifeGoals.Search.Label") { token in
+                        Text(token.localized)
+                    }
                 }
             }
             .overlay {
@@ -73,11 +77,23 @@ struct LifeGoalOverview: View {
     }
     
     private var filteredLifeGoals: [LifeGoal] {
-        guard !searchText.isEmpty else { return lifeGoals }
+        var result = lifeGoals
         
-        return lifeGoals.filter { goal in
-            goal.name.lowercased().contains(searchText.lowercased())
+        // Filter by Search Text (AND)
+        if !searchText.isEmpty {
+            result = result.filter { goal in
+                goal.name.lowercased().contains(searchText.lowercased())
+            }
         }
+        
+        // Filter by Tokens (OR logic within tokens)
+        if !selectedTokens.isEmpty {
+            result = result.filter { goal in
+                selectedTokens.contains(goal.aspect)
+            }
+        }
+        
+        return result
     }
     
     private var isLifeGoalSearchResult: Bool {
