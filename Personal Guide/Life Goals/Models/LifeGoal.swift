@@ -13,6 +13,7 @@ import SwiftUI
     // Properties
     
     var aspect: LifeAspect = LifeAspect.general
+    var createdAt: Date = Date()
     var isAchieved: Bool = false
     var name: String = String(localized: "LifeGoal.Label")
     var id: UUID = UUID()
@@ -21,6 +22,7 @@ import SwiftUI
     
     init(_ name: String = String(localized: "LifeGoals.Properties.Name.Default"), aspect: LifeAspect = .general, isAchieved: Bool = false) {
         self.aspect = aspect
+        self.createdAt = Date()
         self.id = UUID()
         self.isAchieved = isAchieved
         self.name = name

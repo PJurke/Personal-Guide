@@ -12,6 +12,8 @@ struct LifeGoalOverview: View {
     
     @Environment(\.modelContext) private var modelContext: ModelContext
     
+    @State private var confettiCounter: Int = 0
+    
     @Query private var lifeGoals: [LifeGoal]
     @State private var isSearching: Bool = false
     @State private var searchText: String = ""
@@ -53,6 +55,10 @@ struct LifeGoalOverview: View {
                 if isLifeGoalSearchResult {
                     NoLifeGoalSearchResult(action: {})
                 }
+            }
+            .overlay {
+                ConfettiView(counter: $confettiCounter)
+                    .allowsHitTesting(false)
             }
             .navigationTitle("LifeGoals.Label")
             .toolbar {
@@ -115,6 +121,9 @@ struct LifeGoalOverview: View {
     private func toggleAchievementButton(for goal: LifeGoal) -> some View {
         Button {
             goal.isAchieved.toggle()
+            if goal.isAchieved {
+                confettiCounter += 1
+            }
         } label: {
             Image(systemName: "checkmark.circle")
         }
